@@ -1,12 +1,11 @@
-import scrollama from "scrollama";
-import { inView } from "in-view";
-import { Waypoints } from "waypoints"
+//const scrollama = require("scrollama");
 
 
-
-var waypoint = new Waypoint({
-  element: document.getElementById('test-component-2'),
-  handler: function(direction) {
-    alert('You have scrolled to a thing')
-  }
-})
+window.addEventListener('DOMContentLoaded', () => {
+    var waypoint = new Waypoint({
+    element: document.getElementById('test-component-2'),
+    handler: function(direction) {
+        console.log("hello")
+    }
+    })
+});
