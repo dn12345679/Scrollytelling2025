@@ -1,0 +1,15 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+#test-component-1 {
+    height: 120vh;
+    width: 100vw;
+    background-color: tan;
+}
+#test-component-2 {
+    min-height: 10vh;
+    min-width: 100vw;
+    background-color: green;
+}

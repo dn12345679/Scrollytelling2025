@@ -1,0 +1,35 @@
+{
+  "name": "scrollytelling_dn_2025",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "module": "main.js", 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dn12345679/Scrollytelling2025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dn12345679/Scrollytelling2025/issues"
+  },
+  "homepage": "https://github.com/dn12345679/Scrollytelling2025#readme",
+  "dependencies": {
+    "in-view": "^0.6.1",
+    "intersection-observer": "^0.12.2",
+    "scrollama": "^3.2.0",
+    "scrollstory": "^1.1.0",
+    "waypoints": "^4.0.1"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7"
+  }
+}
