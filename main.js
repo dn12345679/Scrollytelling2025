@@ -1,11 +1,12 @@
-//const scrollama = require("scrollama");
 
-
+// create objects once the DOM loads everything for safety
 window.addEventListener('DOMContentLoaded', () => {
-    var waypoint = new Waypoint({
-    element: document.getElementById('test-component-2'),
-    handler: function(direction) {
-        console.log("hello")
-    }
-    })
+    initialize_waypoints()
+
 });
+
+
+function initialize_waypoints() {
+
+}
+

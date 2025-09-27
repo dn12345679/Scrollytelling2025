@@ -1,6 +1,28 @@
+/*
+DEFAULT
+*/
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-size: 1em;
+    line-height: 1.4;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
 }
 * {
   margin: 0;
@@ -8,13 +30,51 @@ html {
   box-sizing: border-box;
 }
 
-#test-component-1 {
+/*
+GLOBAL STATES
+*/
+
+.pinned-content {
+    position: relative;
+}
+
+/*
+PART 1 CONTENT
+*/
+
+#part-1 {
     height: 120vh;
     width: 100vw;
-    background-color: tan;
+    background-color: rgb(126, 184, 238);
 }
-#test-component-2 {
-    min-height: 100vh;
-    min-width: 100vw;
+
+#iceberg {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0
+}
+
+/*
+PART 2 CONTENT
+*/
+
+#part-2 {
+    height: 100vh;
+    width: 100vw; 
+    background-color: blue;
+}
+
+/*
+PART 3 CONTENT
+*/
+
+#part-3 {
+    height: 100vh;
+    width: 100vw; 
     background-color: green;
 }
