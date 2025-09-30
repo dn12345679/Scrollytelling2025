@@ -6,20 +6,27 @@
     <title>Drowning Earth</title>
     <link rel="stylesheet" href = "Styles/styles.css">
 </head>
-
+<script src="./node_modules/scrollama/build/scrollama.min.js"></script>
 <script type="module" src="./main.js"></script>
 <body>
     <main id="main-content">
-        <section>
-            <div id="part-1">
-                <div id="iceberg">
-                    
+        <section class="main-section">
+            <div id="part-1" class="step">
+                <div id="part-1-env">
+                    <img id="iceberg" src="./Assets/Iceberg_default.png" alt="iceberg"/>
+                     <img id="melting-iceberg" src="./Assets/Iceberg_melting.png" alt="melting-iceberg"/>
+
+                    <div class="jitter-animation"><img id="penguin1" class="penguin" src="./Assets/Penguin_normal.png" alt="penguin"/></div>
+                    <div class="jitter-animation"><img id="penguin2" class="penguin" src="./Assets/Penguin_normal.png" alt="penguin"/></div>
+
+                   
                 </div>
             </div>
-            <div id = "part-2">
+
+            <div id = "part-2" class="step">
 
             </div>
-            <div id="part-3">
+            <div id="part-3" class="step">
 
             </div>
         </section>
