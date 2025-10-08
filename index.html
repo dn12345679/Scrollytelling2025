@@ -3,45 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mourning wood</title>
+    <title>Trees!</title>
     <link rel="stylesheet" href = "Styles/styles.css">
 </head>
 <script src="./node_modules/scrollama/build/scrollama.min.js"></script>
-<script type="module" src="./main.js"></script>
+<script type="module" src="./Scripts/main.js"></script>
 <body>
     <main id="main-content">
         <section class="main-section">
-            <div id="p1-p2-connect">
-                <div id="part-1" class="step">
-                    <div id="part-1-env">
-                        <div class="tree">
-                            <div class="canopy"></div>
-                            <div class="trunk"> 
-                                <div class="branch">
-                                    <div class="leaf"></div>
-                                </div>
-                                <div class="branch">
-                                    <div class="leaf"></div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="ground"></div>
-                    </div>
+            <div id="part-1" class="step scene-container">
+                
+                <div id="part-1-env">
+                    <div class="animated-co2-particle preset-font-bark">Co2</div>
+                    <div class="tree"><div class="canopy"></div><div class="trunk"><div class="branch"><div class="leaf"></div></div><div class="branch"><div class="leaf"></div></div></div></div>
+                    <div class="animated-o2-particle preset-font-bark">O2</div>
+                    <div class="ground"></div>
+                </div>
 
-                    <p>
-                        Hello
+                <!-- Will appear as an intro -->
+                <p class="preset-font-bark" id="intro-text-pin">
+                    Trees! by Dylan Nguyen
+                </p>
+                <section id="scene-1-text">
+
+                    <p class="preset-font-wood">
+                        Trees cover a majority of the Earth's Surface area and are home to millions of species. 
+                        Despite feeling insignificant alone, each tree plays a vital role in the environment!
                     </p>
-                </div>
-                <div id = "part-2" class="step">
+                    <p class="preset-font-wood"> 
+                        Today there are over 60,000 estimated species of trees that exist in the world!
+                    </p>
+                    <p class="preset-font-wood">
+                        One of the ways that we indirectly use trees is through absorption of Co2 and conversion to O2! In this article we will explore
+                        how emissions of Co2 has increased over the years. 
+                    </p>
+                </section>
 
-                </div>
+            </div>
+            <div id = "part-2" class="step scene-container">
+                <section id="scene-2-text">
+                    <img id="deforestation_map" src="./Assets/Plots/global_deforestation_map.png"/>
+                    <p class="preset-font-wood" id="main-text-scene-2">
+                        Over the past few decades, 
+                    </p>
+                </section>
             </div>
 
  
 
 
-            <div id="part-3" class="step">
+            <div id="part-3" class="step scene-container">
 
             </div>
         </section>

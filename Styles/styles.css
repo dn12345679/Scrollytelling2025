@@ -34,10 +34,23 @@ html {
 GLOBAL STATES
 */
 
-.pinned-content {
-    position: sticky;
+#intro-text-pin {
+    padding-top: 5vh;
+    margin-bottom: auto;
+    padding-left: 10%;
+    transition: opacity 1.4s ease;
+}
+
+.scene-container {
+    box-shadow: -10px 0px 10px 1px #aaaaaa93;   
 
 }
+
+.hidden {
+    opacity: 0;
+}
+
+
 
 /*
 PART 1 CONTENT
@@ -57,14 +70,89 @@ PART 1 CONTENT
     width: 100vw;
     background: linear-gradient(135deg, #ffbeae, #b7d4d1);
     filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.2));
+    box-shadow: -10px 0px 10px 1px #aaaaaa93;   
+    border-radius: 20px;
 
-    transition: height 0.4s ease, width 0.4s ease, left 0.4s ease;
+    transition: height 0.4s ease, width 0.4s ease, left 0.4s ease, top 0.4s ease;
 }
 #part-1-env.shift-right {
     height: 100vh; 
     width: 50vw;
     left: 50vw;   
 }
+#part-1-env.shift-up {
+    width: 100vw; 
+    height: 50vh; 
+    left: 0vw; 
+    top: 50vh;
+}
+
+
+#scene-1-text {
+    position: sticky;
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 60vh;
+    gap: 60vh;
+
+    transition: height 0.4s ease, width 0.4s ease;
+    padding-left: 10vw; 
+    padding-right: 10vw;
+}
+/* If you change the width here, remember to update other .shift-right */
+#scene-1-text.shift-right {
+    height: 100vh; 
+    width: 50vw; 
+}
+
+
+/* 
+Particles for Scene 1
+*/
+.animated-co2-particle {
+    position: absolute;
+    height: 16vh;
+    width: 16vh;
+    background-color: #f5a5a5;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+
+    top: 5vh;
+    left: 2vw;
+
+    transition: opacity 0.8s ease-in-out;
+}
+.animated-o2-particle {
+    position: absolute;
+    height: 16vh;
+    width: 16vh;
+    background-color: #c4fdff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+
+    top: 5vh;
+    left: 50vw;
+
+    transition: opacity 0.8s ease-in-out;
+}
+
+.animate-particle-conversion {
+    opacity: 1;
+    animation: particle-animation-co2 2s infinite; 
+}
+
 
 /* 
 TREE 
@@ -76,11 +164,15 @@ TREE
 
     top: 30vh; 
     left: 47vw;
-    transition: left 0.2s ease, top 0.2s ease; 
+    transition: left 0.2s ease, top 0.2s ease, scale 0.5s ease; 
 }
 .tree.shift-right {
     top: 40vh;
     left: 25vw;
+}
+.tree.shift-up {
+    scale: 2;
+    top: 60vh;  
 }
 .trunk {
     height: 40vh;
@@ -125,6 +217,7 @@ TREE
     top: -20vh;
     left: -4vw;
     border-radius: 40px;
+
 }
 
 .ground {
@@ -153,10 +246,24 @@ PART 2 CONTENT
 */
 
 #part-2 {
-    
-    height: 100vh;
+    display: flex; 
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 200vh;
     width: 100vw; 
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
+}
+
+
+#deforestation_map {
+    width: 40vw;
+    padding: 2vw;
+    border-radius: 70px;
+    filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.2));
+}
+#main-text-scene-2 {
+    padding-left: 20vw;
 }
 
 /*
@@ -166,11 +273,40 @@ PART 3 CONTENT
 #part-3 {
     height: 100vh;
     width: 100vw; 
-    background-color: green;
+    background-color: rgb(179, 160, 119);
 }
 
 
 /* 
-ANIMATION CLASSES (wraps any element that wants the animation)
+    TEXT FONTS PRESET
 */
 
+.preset-font-wood {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+
+.preset-font-bark {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4em;
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+}
+
+
+/* 
+ANIMATION KEYFRAME SECTION
+*/
+
+@keyframes particle-animation-co2 {
+    0% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(50vw);
+        opacity: 0;
+    }
+}
