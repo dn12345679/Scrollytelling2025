@@ -18,16 +18,19 @@ window.onload = function () {
 var scrolly = document.querySelector('.main-section');
 var step = scrolly.querySelectorAll(".step");
 
-/* PRELOAD ITEMS */ 
+/* PRELOAD ITEMS SCENE 1*/ 
 const env = scrolly.querySelector('#part-1-env');
 const tree = scrolly.querySelector('.tree');
+const tree2 = scrolly.querySelector('.tree_2');
+const tree3 = scrolly.querySelector('.tree_3');
 const ground = scrolly.querySelector('.ground');
 const s1text = scrolly.querySelector('#scene-1-text');
 const co2 = scrolly.querySelector('.animated-co2-particle');
 const o2 = scrolly.querySelector('.animated-o2-particle');
 const intro_text = scrolly.querySelector('#intro-text-pin');
-
-
+/* PRELOAD ITEMS SCENE 3*/
+const env3 = scrolly.querySelector('#part-3-env');
+const logs = scrolly.querySelectorAll('.log');
 
 
 function handleStepProgress(response) {
@@ -35,12 +38,41 @@ function handleStepProgress(response) {
     switch (response.element.id) {
         case 'part-1':
             scene1(response)
+        case 'part-3':
+            scene3(response)
+        default: 
+            break;
     }
 }
 
+function scene3(response) {
+    const elements = [env3, ...logs];
+    if (response.progress > 0.3) {
+        elements.forEach(el => {
+            if (!el.classList.contains('fallen')) {
+                el.classList.add('fallen')
+            }
+        })
+    }
+    else if (response.progress > 0.1) {
+        elements.forEach(el => {
+        if (!el.classList.contains('timber')) {
+            el.classList.remove('fallen')
+            el.classList.add('timber');
+        }
+        });
+    }
+    else {
+        elements.forEach(el => {
+            
+        el.classList.remove('timber');
+        el.classList.remove('fallen')
+    });
+    }
+}
 
 function scene1(response) {
-    const elements = [env, tree, ground, s1text];
+    const elements = [env, tree, ground, s1text, tree2, tree3];
     if (response.progress > 0.9) {
         elements.forEach(el => {
         if (!el.classList.contains('shift-right')) {
