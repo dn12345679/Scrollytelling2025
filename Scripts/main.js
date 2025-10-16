@@ -12,6 +12,8 @@ let scroller = scrollama(); // the 'import' is inside the index html file
 
 window.onload = function () {
       //window.scrollTo(0, 0); // Scroll to the top-left corner
+        // kick things off
+        init();
     };
 
 
@@ -31,40 +33,81 @@ const intro_text = scrolly.querySelector('#intro-text-pin');
 /* PRELOAD ITEMS SCENE 3*/
 const env3 = scrolly.querySelector('#part-3-env');
 const logs = scrolly.querySelectorAll('.log');
+/* Preload Items Scene 5*/
+const leaf = scrolly.querySelector('.leaf-s5');
+const scatter = scrolly.querySelector('.scatter-s5');
+
 
 
 function handleStepProgress(response) {
-    console.log(response.progress)
     switch (response.element.id) {
         case 'part-1':
             scene1(response)
         case 'part-3':
             scene3(response)
+        case 'part-5':
+            scene5(response)
         default: 
             break;
     }
 }
+function scene5(response) {
+
+    if (response.progress < 0.4) {
+        leaf.style.left = `${50 + 20 * Math.sin(4 * Math.PI * response.progress)}vw`;
+        leaf.style.scale = 1.0
+    }
+    else if (response.progress > 0.4 && response.progress < 0.6) {
+        leaf.style.scale = `${(0.4)/(response.progress)}`
+    }
+    else if (response.progress > 0.6) {
+        
+    }
+    
+
+}
 
 function scene3(response) {
     const elements = [env3, ...logs];
-    if (response.progress > 0.3) {
+    if (response.progress > 0.7) {
+         if (!logs[2].classList.contains('.start-bar')) {
+            logs[2].classList.add('start-bar')
+
+        }       
+    }
+    if (response.progress > 0.6) {
+
+        if (!logs[1].classList.contains('.start-bar')) {
+            logs[1].classList.add('start-bar')
+        }
+    }
+    if (response.progress > 0.5) {
+
+        if (!logs[0].classList.contains('.start-bar')) {
+            logs[0].classList.add('start-bar')
+        }
+        
+    }
+    else if (response.progress > 0.3) {
         elements.forEach(el => {
             if (!el.classList.contains('fallen')) {
                 el.classList.add('fallen')
             }
+            el.classList.remove('start-bar')
         })
     }
     else if (response.progress > 0.1) {
         elements.forEach(el => {
-        if (!el.classList.contains('timber')) {
-            el.classList.remove('fallen')
-            el.classList.add('timber');
-        }
+            if (!el.classList.contains('timber')) {
+                
+                el.classList.add('timber');
+            }
+            el.classList.remove('fallen');
         });
     }
     else {
         elements.forEach(el => {
-            
+        el.classList.remove('start-bar');
         el.classList.remove('timber');
         el.classList.remove('fallen')
     });
@@ -138,8 +181,7 @@ function init() {
         .onStepProgress(handleStepProgress);
 }
 
-// kick things off
-init();
+
 
 window.addEventListener("resize", () => {
     scroller = scrollama();

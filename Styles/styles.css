@@ -59,7 +59,7 @@ PART 1 CONTENT
 #part-1 {
     height: 500vh;
     width: 100vw;
-    
+    background: rgb(255, 236, 212);
 }
 /* Scrolls with scene 1 */
 #part-1-env {
@@ -68,7 +68,7 @@ PART 1 CONTENT
     left: 1px;
     height: 80vh;
     width: 100vw;
-    background: #d8c3bd;
+    background: #ddd7d5;
     filter: drop-shadow(10px 0px 6px rgba(0, 0, 0, 0.2));
     box-shadow: 0px 0px 0px 1px #aaaaaa93;   
     border-radius: 20px;
@@ -332,6 +332,7 @@ TREE
 }
 
 .ground {
+    display: none;
     width: 26vw; 
     height: 10vh;
     
@@ -361,12 +362,12 @@ PART 2 CONTENT
     flex-direction: row;
     height: 200vh;
     width: 100vw; 
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(255, 255, 255);
 }
 
 #scene-2-text {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 100vh;
     width: 100vw;
 }
@@ -379,8 +380,10 @@ PART 2 CONTENT
     filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.2));
 }
 .main-text-scene-2 {
-    width: 100vw;
-    padding: 10vw;
+    min-width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vw;
     display: flex;
     flex-direction: row;
 }
@@ -410,14 +413,7 @@ PART 3 CONTENT
     padding-left: 10vw;;
 }
 
-.text-bubble-classic {
-    width: fit-content;
-    height: fit-content;
-    padding: 2vh;
-    background-color: #d8c3bd;
-    filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.2));
 
-}
 
 
 
@@ -438,7 +434,7 @@ LOG
     opacity: 0;
     scale: 0.5;
 
-    transition: left 0.5s cubic-bezier(1, 0, 0, 1), opacity 0.5s cubic-bezier(1, 0, 0, 1), scale 0.5s ease-in-out, transform 0.5s ease-in-out, height 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: left 0.5s  ease-in-out, top 0.5s ease-in-out, opacity 0.5s cubic-bezier(1, 0, 0, 1), scale 0.5s ease-in-out, transform 0.5s ease-in-out, height 0.5s cubic-bezier(1, 0, 0, 1), transform-origin 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .log.timber:nth-child(1) {
     scale: 1;
@@ -457,18 +453,164 @@ LOG
 }
 .log.timber.fallen:nth-child(1) {
     transform-origin: 100% 100%;
+    top: 10vh;
     transform: rotate(90deg);
 }
 .log.timber.fallen:nth-child(2) {
-    transform-origin: 100% 80%;
+    transform-origin: 100% 100%;
     left: 36vh;
     transform: rotate(90deg);
 }
 .log.timber.fallen:nth-child(3) {
-    transform-origin: 100% 60%;
-    left: 52vh;
+    transform-origin: 100% 100%;
+    left: 52vh; 
+    
     transform: rotate(90deg);
 }
+
+.log.timber.fallen.start-bar {
+    top: calc( (-70 + 20 * var(--i)) * 1vh);
+    left: 20vw;
+}
+
+
+
+/* 
+PART 4 CONTENT
+*/
+
+#part-4 {
+    height: 100vh;
+}
+
+.main-text-scene-4 {
+    min-width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* 
+PART 5 CONTENT
+*/
+
+#part-5 {
+    height: 500vh;
+    width: 100vw;
+}
+
+#part-5-env {
+    position: sticky;
+    left: 1px; 
+    top: 1px;
+
+    background: linear-gradient(rgb(105, 165, 255), rgb(135, 224, 197));
+    
+    height: 100vh;
+    width: 100vw;
+}
+
+/* 
+THAT ONE LEAF IN SCENE 5
+*/ 
+
+.leaf-s5 {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    border-radius: 50% 0;
+    background: green;
+    transform: rotate(-5deg);
+}
+.leaf-s5-stem {
+    position: absolute;
+    clip-path: polygon(100% 0, 0 0, 53% 100%);
+    background-color: rgb(42, 212, 42);
+    height: 20vh;
+    width: 2vw;
+    top: -6vh;
+    left: 3vw;
+    transform: rotate(30deg)
+}
+.leaf-s5-vein {
+    position: absolute;
+    width: 2vw;
+    height: 4vh;
+    background-color: rgb(77, 102, 57);
+    clip-path: polygon(100% 44%, 0 43%, 51% 75%);
+}
+
+
+.scatter-s5 {
+    position: sticky;
+    left: 1px;
+    top: 1px; 
+    height: 100vh;
+    width: 100vw;
+}
+.scatter-s5-x {
+    position: absolute;
+    bottom: 10vh;
+    left: 10vw;
+    background: black;
+    width: 60vw;
+    height: 1vh;
+}
+.scatter-s5-xlab {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.scatter-s5-y {
+    position: absolute;
+    bottom: 10vh;
+    left: 10vw;
+    background: black;
+    width: 40vw;
+    height: 1vh;
+    transform-origin: 0% 0%;
+    transform: rotate(270deg);
+}
+.scatter-s5-ylab {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;    
+}
+
+.scatter-points {
+    position: absolute;
+    height: 40vw;
+    width: 60vw;
+
+    bottom: 10vh;
+    left: 10vw;
+}
+.s-point {
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    background: green;
+    border-radius: 60px;
+}
+
+
+.tick-label {
+    background: black;
+    height: 5vh;
+    width: 0.1vw;
+    transform: translateY(-50%);
+}
+
 
 
 /* 
@@ -494,6 +636,21 @@ LOG
     font-size: 3em;
     color: black;
     letter-spacing: 2px;
+}
+
+
+/* 
+TEXT BUBBLES 
+*/
+
+.text-bubble-classic {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 2vh;
+    background-color: #ffffff;
+    filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.2));
+    outline-style:groove;
 }
 
 
