@@ -10,6 +10,12 @@ textarea {
     color: #222;
 }
 
+body {
+    zoom: 100%;
+    -ms-zoom: 100%;
+    -moz-transform: scale(1.0);
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 1em;
@@ -331,6 +337,7 @@ TREE
 
 }
 
+
 .ground {
     display: none;
     width: 26vw; 
@@ -414,6 +421,45 @@ PART 3 CONTENT
 }
 
 
+.bar-plot {
+    opacity: 0;
+}
+.bar-s3-x {
+    position: absolute;
+    bottom: 10vh;
+    left: 10vw;
+    background: black;
+    width: 60vw;
+    height: 1vh;
+}
+.bar-s3-xlab {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+}
+.bar-s3-y {
+    position: absolute;
+    bottom: 10vh;
+    left: 10vw;
+    background: black;
+    width: 40vw;
+    height: 1vh;
+    transform-origin: 0% 0%;
+    transform: rotate(270deg);
+}
+.bar-s3-ylab {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;    
+}
 
 
 
@@ -436,32 +482,34 @@ LOG
 
     transition: left 0.5s  ease-in-out, top 0.5s ease-in-out, opacity 0.5s cubic-bezier(1, 0, 0, 1), scale 0.5s ease-in-out, transform 0.5s ease-in-out, height 0.5s cubic-bezier(1, 0, 0, 1), transform-origin 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.log.timber:nth-child(1) {
+
+/* Starts at 2 since the axes are the "first child" */
+.log.timber:nth-child(2) {
     scale: 1;
     opacity: 1;
     left: 10vw;
 }
-.log.timber:nth-child(2) {
+.log.timber:nth-child(3) {
     scale: 1;
     opacity: 0.95;
     left: 17vw;
 }
-.log.timber:nth-child(3) {
+.log.timber:nth-child(4) {
     scale: 1;
     opacity: 0.9;
     left: 24vw;
 }
-.log.timber.fallen:nth-child(1) {
+.log.timber.fallen:nth-child(2) {
     transform-origin: 100% 100%;
     top: 10vh;
     transform: rotate(90deg);
 }
-.log.timber.fallen:nth-child(2) {
+.log.timber.fallen:nth-child(3) {
     transform-origin: 100% 100%;
     left: 36vh;
     transform: rotate(90deg);
 }
-.log.timber.fallen:nth-child(3) {
+.log.timber.fallen:nth-child(4) {
     transform-origin: 100% 100%;
     left: 52vh; 
     
@@ -470,7 +518,7 @@ LOG
 
 .log.timber.fallen.start-bar {
     top: calc( (-70 + 20 * var(--i)) * 1vh);
-    left: 20vw;
+    left: 5vw;
 }
 
 
@@ -511,6 +559,39 @@ PART 5 CONTENT
     
     height: 100vh;
     width: 100vw;
+
+}
+#part-5-parallax {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+}
+
+/*
+ PARRALAX BACKGROUNDS
+*/
+.wood-parallax {
+    position: absolute;
+    background: repeating-linear-gradient(90deg,#a0522d,#8b4513 10px,#8b4513 20px);
+
+    border: 5px solid #8b4513;
+    width: 80vw;
+    right: -20vw;
+    top: 15vw;
+    height: 10vh;
+    rotate:calc(30deg);
+}
+
+.bush-parallax {
+    position: absolute;
+    top: 140vh;
+    left: 5vw;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 30px;
+    background: green;
+    opacity: 0.4;
 }
 
 /* 
@@ -519,6 +600,7 @@ THAT ONE LEAF IN SCENE 5
 
 .leaf-s5 {
     position: absolute;
+    left: 50vw;
     width: 100px;
     height: 200px;
     border-radius: 50% 0;
@@ -541,6 +623,9 @@ THAT ONE LEAF IN SCENE 5
     height: 4vh;
     background-color: rgb(77, 102, 57);
     clip-path: polygon(100% 44%, 0 43%, 51% 75%);
+    transform: rotate(30deg);
+    left: 3vw;
+    z-index: 5;
 }
 
 
@@ -550,6 +635,8 @@ THAT ONE LEAF IN SCENE 5
     top: 1px; 
     height: 100vh;
     width: 100vw;
+    scale: 0.0;
+    opacity: 0.0;
 }
 .scatter-s5-x {
     position: absolute;
@@ -599,7 +686,6 @@ THAT ONE LEAF IN SCENE 5
     position: absolute;
     width: 1vw;
     height: 1vw;
-    background: green;
     border-radius: 60px;
 }
 
@@ -611,6 +697,47 @@ THAT ONE LEAF IN SCENE 5
     transform: translateY(-50%);
 }
 
+/*
+PART 6 CONTENT
+*/
+
+#part-6 {
+    height: 100vh;
+    width: 100vw;
+}
+#part-6-env {
+    position: sticky;
+    left: 1px; 
+    top: 1px;
+
+    
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+/*
+PART 7 CONTENT
+*/
+
+#part-7 {
+    height: 100vh;
+    width: 100vw;
+}
+
+#part-7-env {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#map { 
+    height: 80vh; 
+    width: 80vw ;
+    
+}
 
 
 /* 
@@ -636,6 +763,16 @@ THAT ONE LEAF IN SCENE 5
     font-size: 3em;
     color: black;
     letter-spacing: 2px;
+}
+
+.animate-text {
+    scale: 0.0;
+    opacity: 0.0;
+    transition: scale 0.5s ease-in-out, opacity 0.5s ease-in-out
+}
+.animate-text.play-fade-in {
+    scale: 1.0;
+    opacity: 1.0;
 }
 
 
