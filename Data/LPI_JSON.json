@@ -1,0 +1,212 @@
+[
+  {
+    "Entity": "Africa",
+    "lpi_final": 100,
+    "Year": 1970
+  },
+  {
+    "Entity": "Africa",
+    "lpi_final": 61.5358,
+    "Year": 1980
+  },
+  {
+    "Entity": "Africa",
+    "lpi_final": 43.6167,
+    "Year": 1990
+  },
+  {
+    "Entity": "Africa",
+    "lpi_final": 40.7465,
+    "Year": 2000
+  },
+  {
+    "Entity": "Africa",
+    "lpi_final": 31.545,
+    "Year": 2010
+  },
+  {
+    "Entity": "Africa",
+    "lpi_final": 23.967,
+    "Year": 2020
+  },
+  {
+    "Entity": "Asia and Pacific",
+    "lpi_final": 100,
+    "Year": 1970
+  },
+  {
+    "Entity": "Asia and Pacific",
+    "lpi_final": 101.171,
+    "Year": 1980
+  },
+  {
+    "Entity": "Asia and Pacific",
+    "lpi_final": 90.7065,
+    "Year": 1990
+  },
+  {
+    "Entity": "Asia and Pacific",
+    "lpi_final": 60.8369,
+    "Year": 2000
+  },
+  {
+    "Entity": "Asia and Pacific",
+    "lpi_final": 42.0389,
+    "Year": 2010
+  },
+  {
+    "Entity": "Asia and Pacific",
+    "lpi_final": 39.6039,
+    "Year": 2020
+  },
+  {
+    "Entity": "Europe and Central Asia",
+    "lpi_final": 100,
+    "Year": 1970
+  },
+  {
+    "Entity": "Europe and Central Asia",
+    "lpi_final": 111.7907,
+    "Year": 1980
+  },
+  {
+    "Entity": "Europe and Central Asia",
+    "lpi_final": 128.2238,
+    "Year": 1990
+  },
+  {
+    "Entity": "Europe and Central Asia",
+    "lpi_final": 97.2654,
+    "Year": 2000
+  },
+  {
+    "Entity": "Europe and Central Asia",
+    "lpi_final": 85.3536,
+    "Year": 2010
+  },
+  {
+    "Entity": "Europe and Central Asia",
+    "lpi_final": 64.715,
+    "Year": 2020
+  },
+  {
+    "Entity": "Freshwater",
+    "lpi_final": 100,
+    "Year": 1970
+  },
+  {
+    "Entity": "Freshwater",
+    "lpi_final": 74.023,
+    "Year": 1980
+  },
+  {
+    "Entity": "Freshwater",
+    "lpi_final": 49.2326,
+    "Year": 1990
+  },
+  {
+    "Entity": "Freshwater",
+    "lpi_final": 28.348,
+    "Year": 2000
+  },
+  {
+    "Entity": "Freshwater",
+    "lpi_final": 17.5656,
+    "Year": 2010
+  },
+  {
+    "Entity": "Freshwater",
+    "lpi_final": 14.7831,
+    "Year": 2020
+  },
+  {
+    "Entity": "Latin America and the Caribbean",
+    "lpi_final": 100,
+    "Year": 1970
+  },
+  {
+    "Entity": "Latin America and the Caribbean",
+    "lpi_final": 63.4376,
+    "Year": 1980
+  },
+  {
+    "Entity": "Latin America and the Caribbean",
+    "lpi_final": 35.5696,
+    "Year": 1990
+  },
+  {
+    "Entity": "Latin America and the Caribbean",
+    "lpi_final": 19.0162,
+    "Year": 2000
+  },
+  {
+    "Entity": "Latin America and the Caribbean",
+    "lpi_final": 9.4994,
+    "Year": 2010
+  },
+  {
+    "Entity": "Latin America and the Caribbean",
+    "lpi_final": 5.3773,
+    "Year": 2020
+  },
+  {
+    "Entity": "North America",
+    "lpi_final": 100,
+    "Year": 1970
+  },
+  {
+    "Entity": "North America",
+    "lpi_final": 91.3587,
+    "Year": 1980
+  },
+  {
+    "Entity": "North America",
+    "lpi_final": 85.0634,
+    "Year": 1990
+  },
+  {
+    "Entity": "North America",
+    "lpi_final": 72.7109,
+    "Year": 2000
+  },
+  {
+    "Entity": "North America",
+    "lpi_final": 72.0721,
+    "Year": 2010
+  },
+  {
+    "Entity": "North America",
+    "lpi_final": 60.955,
+    "Year": 2020
+  },
+  {
+    "Entity": "World",
+    "lpi_final": 100,
+    "Year": 1970
+  },
+  {
+    "Entity": "World",
+    "lpi_final": 78.4334,
+    "Year": 1980
+  },
+  {
+    "Entity": "World",
+    "lpi_final": 60.0921,
+    "Year": 1990
+  },
+  {
+    "Entity": "World",
+    "lpi_final": 44.3735,
+    "Year": 2000
+  },
+  {
+    "Entity": "World",
+    "lpi_final": 31.1,
+    "Year": 2010
+  },
+  {
+    "Entity": "World",
+    "lpi_final": 27.1341,
+    "Year": 2020
+  }
+]

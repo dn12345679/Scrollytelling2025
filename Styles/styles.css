@@ -49,12 +49,22 @@ GLOBAL STATES
 
 .scene-container {
     box-shadow: -10px 0px 10px 1px #aaaaaa93;   
-
+    
+    flex: none;
 }
 
 .hidden {
     opacity: 0;
 }
+
+#main-content {
+
+    scroll-behavior:smooth;
+
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 
@@ -400,7 +410,7 @@ PART 3 CONTENT
 */
 
 #part-3 {
-    height: 500vh;
+    height: 550vh;
     width: 100vw; 
     background-color: rgb(179, 160, 119);
 }
@@ -473,14 +483,31 @@ LOG
     height: 80vh;
     top: 10vh;
     left: -10vw;
-    background: repeating-linear-gradient(90deg,#a0522d,#8b4513 10px,#8b4513 20px);
-
-    border: 5px solid #8b4513;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    
+    
     opacity: 0;
     scale: 0.5;
 
     transition: left 0.5s  ease-in-out, top 0.5s ease-in-out, opacity 0.5s cubic-bezier(1, 0, 0, 1), scale 0.5s ease-in-out, transform 0.5s ease-in-out, height 0.5s cubic-bezier(1, 0, 0, 1), transform-origin 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.log::before {
+    content: "";
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: calc(var(--h) * 2.5vw);
+    border: 5px solid #8b4513;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: repeating-linear-gradient(90deg,#a0522d,#8b4513 10px,#8b4513 20px);
+}
+.bar-content {
+    font-size: 1.5vw;
+    transform: rotate(270deg);
+    opacity: 0;
+}
+.bar-content.visible {
+    opacity: 1;
 }
 
 /* Starts at 2 since the axes are the "first child" */
@@ -528,7 +555,7 @@ PART 4 CONTENT
 */
 
 #part-4 {
-    height: 100vh;
+    height: 150vh;
 }
 
 .main-text-scene-4 {
@@ -688,13 +715,29 @@ THAT ONE LEAF IN SCENE 5
     height: 1vw;
     border-radius: 60px;
 }
+.s-line {
+    position: absolute;
+    width: calc(60/7 * 1vw);
+    height: 0.5vh;
+}
 
 
 .tick-label {
     background: black;
     height: 5vh;
-    width: 0.1vw;
-    transform: translateY(-50%);
+    width: 0.1vw; 
+    font-size: 1.8vw;
+    
+}
+.tick-label-small {
+
+    height: 3vh;
+    width: 0.1vw; 
+    font-size: 1vw;    
+}
+
+.y {
+    transform: translateY(-110%);
 }
 
 /*
@@ -780,6 +823,16 @@ PART 7 CONTENT
 TEXT BUBBLES 
 */
 
+.text-bubble-thin {
+    position: relative;
+    width: 25vw;
+    height: fit-content;
+    padding: 2vh;
+    background-color: #ffffff;
+    filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.2));
+    outline-style:groove;
+}
+
 .text-bubble-classic {
     position: relative;
     width: fit-content;
@@ -789,7 +842,16 @@ TEXT BUBBLES
     filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.2));
     outline-style:groove;
 }
+.text-bubble-wide {
+    position: relative;
+    width: 50vw; 
+    height: fit-content;
+    padding: 2vh;
+    background-color: white;
+      filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.2));
+    outline-style:groove;  
 
+}
 
 /* 
 ANIMATION KEYFRAME SECTION

@@ -35,6 +35,7 @@ const text_box_s2 = scrolly.querySelectorAll('.main-text-scene-2.animate-text')
 /* PRELOAD ITEMS SCENE 3*/
 const env3 = scrolly.querySelector('#part-3-env');
 const logs = scrolly.querySelectorAll('.log');
+const log_labels = scrolly.querySelectorAll('.bar-content')
 const axes3 = scrolly.querySelector('.bar-plot');
 /* PRELOAD ITEMS SCENE 4 */
 const text_box_s4 = scrolly.querySelectorAll('.main-text-scene-4.animate-text')
@@ -130,7 +131,8 @@ function scene5(response) {
         leaf.style.scale = `${1 - t}`
         scatter.style.scale = `${t}`
         scatter.style.opacity = `${t}`
-        bush.style.top = `${140 - 100 * (1- response.progress)}vh`;
+        bush.style.setProperty('top', `${140 - 100 * (1 - response.progress)}vh`);
+        bush.style.setProperty('left', `${20 - (1 - response.progress) * -50}vw`);
 
         // IDEA: Maybe include layer-blurred "trees" that acts as parallax effects
     }
@@ -142,28 +144,30 @@ function scene5(response) {
 }
 
 function scene3(response) {
-    const elements = [env3, ...logs];
-    const t = (response.progress - 0.3) / (0.7 - 0.3)
+    const elements = [env3, ...logs, ...log_labels];
+    const t = (response.progress - 0.3) / (0.5 - 0.3)
     if (Math.sign(t) >0) {
         axes3.style.opacity = t
     }
-    if (response.progress > 0.7) {
+    if (response.progress > 0.80) {
          if (!logs[2].classList.contains('.start-bar')) {
             logs[2].classList.add('start-bar')
+            log_labels[2].classList.add('visible')
 
         }       
     }
-    else if (response.progress > 0.6) {
+    else if (response.progress > 0.7) {
 
         if (!logs[1].classList.contains('.start-bar')) {
             logs[1].classList.add('start-bar')
+            log_labels[1].classList.add('visible')
         }
     }
     else if (response.progress > 0.5) {
 
         if (!logs[0].classList.contains('.start-bar')) {
             logs[0].classList.add('start-bar')
-            
+            log_labels[0].classList.add('visible')
         }
         
     }
@@ -171,9 +175,12 @@ function scene3(response) {
         elements.forEach(el => {
             if (!el.classList.contains('fallen')) {
                 el.classList.add('fallen')
-            }
+                
+            }   
             el.classList.remove('start-bar')
         })
+
+
     }
     else if (response.progress > 0.1) {
         elements.forEach(el => {
@@ -189,6 +196,7 @@ function scene3(response) {
         el.classList.remove('start-bar');
         el.classList.remove('timber');
         el.classList.remove('fallen')
+        el.classList.remove('visible')
     });
     }
 }

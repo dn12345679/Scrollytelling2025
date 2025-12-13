@@ -43,8 +43,10 @@
                     </p>
 
                     <p class="preset-font-wood">
-                        One of the ways that we indirectly use trees is through absorption of Co2 and conversion to O2! In this article we will explore
-                        how emissions of Co2 has increased over the years.     
+                        Trees are a major contributing factor to a healthy ecosystem. This article will visualize how deforestation has changed around the world, 
+                        and the outcomes as a result of. There are many everyday activities that are impacted by the presence of these natural components, such as the conversion of 
+                        carbon dioxide into oxygen! More on that topic below. 
+                        
                     </p>
                 </section>
 
@@ -75,11 +77,18 @@
                             <div class="bar-s3-y">
                                 <div class="bar-s3-ylab">
                                     <script class="tick-maker">
+                                        
+                                        const TOP3DRIVERS = ["Logging", "Agriculture", "Wildfire"]
+
                                         var frag = document.createDocumentFragment();
                                         let ln = 3
                                         for (let i = 0; i < ln; i++) {
                                             let xtick = document.createElement('div');
-                                            xtick.innerHTML = '<p class="tick-label y">Unit</p>'
+                                            xtick.innerHTML = `
+                                            <p class="tick-label y">
+                                                
+                                                ${TOP3DRIVERS[i]}
+                                            </p>`
 
                                             while (xtick.childNodes[0]) {
                                                 frag.appendChild(xtick.childNodes[0]);
@@ -98,7 +107,7 @@
                                         let lm = 10;
                                         for (let i = 0; i < lm; i++) {
                                             let xtick = document.createElement('div');
-                                            xtick.innerHTML = '<p class="tick-label x">Unit</p>'
+                                            xtick.innerHTML = `<p class="tick-label x">${2 * (i+1)}</p>`
 
                                             while (xtick.childNodes[0]) {
                                                 frag.appendChild(xtick.childNodes[0]);
@@ -112,32 +121,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="log" style="--i:1; --j:24"></div>
-                    <div class="log" style="--i:2; --j:27"></div>
-                    <div class="log" style="--i:3; --j:18"></div>
+                    <!--BTW, this --h variable comes from the R data5 dataset on Country drivers.-->
+                    <div class="log" style="--i:1; --j:24; --h:13.875"><div class="bar-content">13.875m ha</div></div>
+                    <div class="log" style="--i:2; --j:27; --h:6.749"><div class="bar-content">6.749m ha</div></div>
+                    <div class="log" style="--i:3; --j:18; --h:5.252"><div class="bar-content">5.252m ha</div></div>
 
                 </div>
                 <div id="scene-3-text">
-                    <p class="preset-font-twig text-bubble-classic">
-                        Previous data has shown that ... Deforestation has increased
+                    <p class="preset-font-twig text-bubble-wide">
+                        There are many factors that lead to loss of forest cover. According to the Global Forest Watch in 2024, commonly 
+                        reported drivers included logging, hard commodities, permanent agriculture, settlements and infrastructure, shifting cultivation, 
+                        wildfires, and other natural disturbances. 
                     </p>
                     <p class="preset-font-twig text-bubble-classic" style="right: -60vw; margin-top: 120vh;">
-                        Logging and other Forest activity...
+                        The single most potent contributor to deforestation in 2024 was wilfires, a natural disaster responsible for 
+                        almost 14 million hectares of forest damage. 
                     </p>
                     <p class="preset-font-twig text-bubble-classic" style="right: -60vw; margin-top: 50vh;">
-                        Fires and natural disasters
+                        Agriculture on the other hand, is responsible for almost 7 million hectares of deforestation globally.
                     </p>
                     <p class="preset-font-twig text-bubble-classic" style="right: -60vw; margin-top: 30vh;">
-                        And agriculture
+                        Lastly, logging contributed another 5.25 million hectares in damages. 
                     </p>
                 </div>
             </div>
             <div id = "part-4" class="step scene-container">
                 <section id="scene-4-text">
                     <p class="preset-font-wood main-text-scene-4 animate-text">
-                        How does biodiversity get affected by deforestation? 
-
-                        ADD A SLOPE GRAPH HERE
+One of the previously mentioned factors which contributed significantly to deforestation was farming and agriculture. Pendra et al. (2019), measured the 
+                        carbon dioxide (Co2) emissions per capita of several countries. According to the data in the year 2013, 
+                       
                     </p>
 
                 </section>
@@ -146,18 +159,21 @@
             
                 <div id="part-5-parallax">
                     <div class="wood-parallax"></div>
-                    <div class="bush-parallax">
-
-                    </div>
+                    <div class="bush-parallax"></div>
+                    <div class="bush-parallax"></div>
                 </div>
                 <div id = "part-5-env">
                         <div class="leaf-s5" style="top: 20vh"><div class="leaf-s5-vein"></div><div class="leaf-s5-stem"></div></div> 
-
-
                 </div>
 
-                <p class="preset-font-twig text-bubble-classic" style="right: -60vw; margin-top: 30vh;">
-                        And agriculture
+                <p class="preset-font-twig text-bubble-thin" style="right: -60vw; margin-top: 30vh; font-size: 3vh;">
+                     What about other living inhabitants? How does the biodiversity get affected by deforestation? According to the Global Living Planet index, which measures 
+                        the diversity and abundance of living beings in a given region, there have been significant changes in animal populations since its initial conception, strongly linked
+                        with habitat loss related to deforestation. Between the year 1970 and 2020, the majority of continents has seen a decrease, with some anomalies such as 
+                        the year 1990, which featured a major spike in (some region). 
+                </p>
+                <p class="preset-font-twig text-bubble-thin" style="right: 2vw; margin-top: 150vh; position: absolute; font-size: 3vh;">
+                    However overall, there was a noticeable decrease in recorded LPI across all the (named regions).
                 </p>
 
                 <!-- EITHER PUT THE Co2 part here, or in part 6-->
@@ -166,10 +182,10 @@
                         <div class="scatter-s5-ylab">
                             <script class="tick-maker">
                                 var frag = document.createDocumentFragment();
-                                let m = 10;
+                                let m = 13;
                                 for (let i = 0; i < m; i++) {
                                     let xtick = document.createElement('div');
-                                    xtick.innerHTML = '<p class="tick-label y">Unit</p>'
+                                    xtick.innerHTML = `<p class="tick-label-small y">${(i+1) * 10}</p>`
 
                                     while (xtick.childNodes[0]) {
                                         frag.appendChild(xtick.childNodes[0]);
@@ -184,10 +200,10 @@
                         <div class="scatter-s5-xlab">
                             <script class="tick-maker">
                                 var frag = document.createDocumentFragment();
-                                let n = 10;
+                                let n = 6;
                                 for (let i = 0; i < n; i++) {
                                     let xtick = document.createElement('div');
-                                    xtick.innerHTML = '<p class="tick-label x">Unit</p>'
+                                    xtick.innerHTML = `<p class="tick-label x">${1970 + i * 10}</p>`
 
                                     while (xtick.childNodes[0]) {
                                         frag.appendChild(xtick.childNodes[0]);
@@ -202,16 +218,290 @@
 
                     <div class="scatter-points">
                         <script class="scatter-point-adder">
-                            var pointfrag = document.createDocumentFragment();
-                            let points = [[120, 40, "#E7ECCE"], [200, 24, "#E6C189"]];
-                            points.forEach(pt => {
-                                let p = document.createElement('div');
-                                p.innerHTML = `<div class="s-point" style="left: ${pt[0]}px; top: ${pt[1]}px; background: ${pt[2]}"></div>`;
+                            // didn't want to bother importing asynchronously so I hard-coded it. My bad future reader
+                            data = [
+  {
+    "Entity": "Africa",
+    "lpi_final": 100,
+    "Year": 1970
+  },
+  {
+    "Entity": "Africa",
+    "lpi_final": 61.5358,
+    "Year": 1980
+  },
+  {
+    "Entity": "Africa",
+    "lpi_final": 43.6167,
+    "Year": 1990
+  },
+  {
+    "Entity": "Africa",
+    "lpi_final": 40.7465,
+    "Year": 2000
+  },
+  {
+    "Entity": "Africa",
+    "lpi_final": 31.545,
+    "Year": 2010
+  },
+  {
+    "Entity": "Africa",
+    "lpi_final": 23.967,
+    "Year": 2020
+  },
+  {
+    "Entity": "Asia and Pacific",
+    "lpi_final": 100,
+    "Year": 1970
+  },
+  {
+    "Entity": "Asia and Pacific",
+    "lpi_final": 101.171,
+    "Year": 1980
+  },
+  {
+    "Entity": "Asia and Pacific",
+    "lpi_final": 90.7065,
+    "Year": 1990
+  },
+  {
+    "Entity": "Asia and Pacific",
+    "lpi_final": 60.8369,
+    "Year": 2000
+  },
+  {
+    "Entity": "Asia and Pacific",
+    "lpi_final": 42.0389,
+    "Year": 2010
+  },
+  {
+    "Entity": "Asia and Pacific",
+    "lpi_final": 39.6039,
+    "Year": 2020
+  },
+  {
+    "Entity": "Europe and Central Asia",
+    "lpi_final": 100,
+    "Year": 1970
+  },
+  {
+    "Entity": "Europe and Central Asia",
+    "lpi_final": 111.7907,
+    "Year": 1980
+  },
+  {
+    "Entity": "Europe and Central Asia",
+    "lpi_final": 128.2238,
+    "Year": 1990
+  },
+  {
+    "Entity": "Europe and Central Asia",
+    "lpi_final": 97.2654,
+    "Year": 2000
+  },
+  {
+    "Entity": "Europe and Central Asia",
+    "lpi_final": 85.3536,
+    "Year": 2010
+  },
+  {
+    "Entity": "Europe and Central Asia",
+    "lpi_final": 64.715,
+    "Year": 2020
+  },
+  {
+    "Entity": "Freshwater",
+    "lpi_final": 100,
+    "Year": 1970
+  },
+  {
+    "Entity": "Freshwater",
+    "lpi_final": 74.023,
+    "Year": 1980
+  },
+  {
+    "Entity": "Freshwater",
+    "lpi_final": 49.2326,
+    "Year": 1990
+  },
+  {
+    "Entity": "Freshwater",
+    "lpi_final": 28.348,
+    "Year": 2000
+  },
+  {
+    "Entity": "Freshwater",
+    "lpi_final": 17.5656,
+    "Year": 2010
+  },
+  {
+    "Entity": "Freshwater",
+    "lpi_final": 14.7831,
+    "Year": 2020
+  },
+  {
+    "Entity": "Latin America and the Caribbean",
+    "lpi_final": 100,
+    "Year": 1970
+  },
+  {
+    "Entity": "Latin America and the Caribbean",
+    "lpi_final": 63.4376,
+    "Year": 1980
+  },
+  {
+    "Entity": "Latin America and the Caribbean",
+    "lpi_final": 35.5696,
+    "Year": 1990
+  },
+  {
+    "Entity": "Latin America and the Caribbean",
+    "lpi_final": 19.0162,
+    "Year": 2000
+  },
+  {
+    "Entity": "Latin America and the Caribbean",
+    "lpi_final": 9.4994,
+    "Year": 2010
+  },
+  {
+    "Entity": "Latin America and the Caribbean",
+    "lpi_final": 5.3773,
+    "Year": 2020
+  },
+  {
+    "Entity": "North America",
+    "lpi_final": 100,
+    "Year": 1970
+  },
+  {
+    "Entity": "North America",
+    "lpi_final": 91.3587,
+    "Year": 1980
+  },
+  {
+    "Entity": "North America",
+    "lpi_final": 85.0634,
+    "Year": 1990
+  },
+  {
+    "Entity": "North America",
+    "lpi_final": 72.7109,
+    "Year": 2000
+  },
+  {
+    "Entity": "North America",
+    "lpi_final": 72.0721,
+    "Year": 2010
+  },
+  {
+    "Entity": "North America",
+    "lpi_final": 60.955,
+    "Year": 2020
+  },
+  {
+    "Entity": "World",
+    "lpi_final": 100,
+    "Year": 1970
+  },
+  {
+    "Entity": "World",
+    "lpi_final": 78.4334,
+    "Year": 1980
+  },
+  {
+    "Entity": "World",
+    "lpi_final": 60.0921,
+    "Year": 1990
+  },
+  {
+    "Entity": "World",
+    "lpi_final": 44.3735,
+    "Year": 2000
+  },
+  {
+    "Entity": "World",
+    "lpi_final": 31.1,
+    "Year": 2010
+  },
+  {
+    "Entity": "World",
+    "lpi_final": 27.1341,
+    "Year": 2020
+  }
+]
 
-                                while (p.childNodes[0]) {
-                                    pointfrag.appendChild(p.childNodes[0]);
+
+
+                            const groupedByEntity = {};
+                            data.forEach(entry => {
+                                if (!groupedByEntity[entry.Entity]) {
+                                    groupedByEntity[entry.Entity] = [];
                                 }
+                                groupedByEntity[entry.Entity].push(entry);
                             });
+
+                            Object.keys(groupedByEntity).forEach(entity => {
+                                groupedByEntity[entity].sort((a, b) => a.Year - b.Year);
+                            });
+
+                            const colors = ["#E7ECCE", "#E6C189", "#89e6d8", "#eb597b", "#4bd173", "#738539", "#a33a31"];
+                            const entityColors = {};
+                            let colorIndex = 0;
+
+                            Object.keys(groupedByEntity).forEach(entity => {
+                                entityColors[entity] = colors[colorIndex % colors.length];
+                                colorIndex++;
+                            });
+
+                            var pointfrag = document.createDocumentFragment();
+
+                            Object.keys(groupedByEntity).forEach(entity => {
+                                const entityData = groupedByEntity[entity];
+                                const color = entityColors[entity];
+
+                                for (let i = 0; i < entityData.length - 1; i++) {
+                                    const current = entityData[i];
+                                    const next = entityData[i + 1];
+                                    
+                                    const x1 = 60/7 * Math.abs(1970 - current.Year)/10 + 8;
+                                    const y1 = current.lpi_final/40 * 12;
+                                    const x2 = 60/7 * Math.abs(1970 - next.Year)/10 + 8;
+                                    const y2 = next.lpi_final/40 * 12;
+
+                                    const length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+                                    const angle = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
+                                    
+                                    let line = document.createElement('div');
+                                    line.className = 's-line';
+                                    line.style.cssText = `
+                                        position: absolute;
+                                        left: ${x1}vw;
+                                        bottom: ${y1}vw;
+                                        width: ${length}vw;
+                                        height: 2px;
+                                        background: ${color};
+                                        transform-origin: 0 50%;
+                                        transform: rotate(${-angle}deg);
+                                    `;
+                                    pointfrag.appendChild(line);
+                                }
+                                entityData.forEach(entry => {
+                                    const x = 60/7 * Math.abs(1970 - entry.Year)/10 + 8;
+                                    const y = entry.lpi_final/40 * 12;
+                                    
+                                    let point = document.createElement('div');
+                                    point.className = 's-point';
+                                    point.style.cssText = `
+                                        left: ${x}vw;
+                                        bottom: ${y}vw;
+                                        background: ${color};
+                                    `;
+                                    pointfrag.appendChild(point);
+                                });
+                            });
+
                             document.querySelector(".scatter-points").appendChild(pointfrag);
                         </script>
                     </div>
@@ -228,9 +518,7 @@
 
             <div id="part-7" class="step scene-container">
                 <div id="part-7-env">
-                    <div id="map">
-                        
-                    </div>
+                    <!--<div id="map"></div> -->
                 </div>
 
             </div>
