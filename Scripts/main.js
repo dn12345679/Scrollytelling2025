@@ -16,6 +16,9 @@ window.onload = function () {
     };
 
 
+
+
+
 var scrolly = document.querySelector('.main-section');
 var step = scrolly.querySelectorAll(".step");
 
@@ -42,7 +45,30 @@ const text_box_s4 = scrolly.querySelectorAll('.main-text-scene-4.animate-text')
 const leaf = scrolly.querySelector('.leaf-s5');
 const scatter = scrolly.querySelector('.scatter-s5');
 const bush = scrolly.querySelector('.bush-parallax');
+/* items scene 7 */
 
+var map = L.map('map', {
+    dragging: false, 
+    scrollWheelZoom: false,
+    doubleClickZoom: false,
+    boxZoom: false, 
+    keyboard: false, 
+    zoomControl: false
+
+})
+
+map.setView([43.53, 5.45], 10);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+}).addTo(map);
+
+var circle = L.circle([43.53, 5.45], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(map);
 
 
 function handleStepProgress(response) {
@@ -101,18 +127,11 @@ function scene4(response) {
 }
 
 function scene7(response) {
-    var map = L.map('map').setView([43.53, 5.45], 12);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-    
-    var circle = L.circle([43.53, 5.45], {
-        color: 'red',
-        fillColor: '#f03',
-        fillOpacity: 0.5,
-        radius: 500
-    }).addTo(map);
+    if (response.progress > 0.4) {
+        map.setView([12.53, 14.45], 10);
+    }else {
+        map.setView([43.53, 5.45], 10);
+    }
 
 }
 
