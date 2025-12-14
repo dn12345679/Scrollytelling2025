@@ -745,19 +745,40 @@ PART 6 CONTENT
 */
 
 #part-6 {
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
 }
 #part-6-env {
     position: sticky;
     left: 1px; 
     top: 1px;
-
-    
     height: 100vh;
     width: 100vw;
 }
+.text-animate-fire {
+    position: absolute;
+    left: 2vw;
+}
 
+.fire-shape {
+
+}
+.fire-red-circle {
+
+}
+.fire-red-triangle:nth-child(1) {
+
+}
+
+.fire-orange-circle {
+
+}
+.fire-orange-triangle {
+
+}
+.fire-yellow-circle {
+
+}
 
 
 /*
