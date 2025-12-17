@@ -559,12 +559,18 @@ PART 4 CONTENT
 }
 
 .main-text-scene-4 {
-    min-width: 100vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    width: 20vw;
+
     padding-top: 5vw;
     display: flex;
     flex-direction: row;
+}
+.scene-4-text {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -745,7 +751,7 @@ PART 6 CONTENT
 */
 
 #part-6 {
-    height: 200vh;
+    height: 800vh;
     width: 100vw;
 }
 #part-6-env {
@@ -756,28 +762,48 @@ PART 6 CONTENT
     width: 100vw;
 }
 .text-animate-fire {
-    position: absolute;
-    left: 2vw;
+    position: sticky;
+    top: 0;
+    left: 1vw;
+    height: 100vh;
+    background: wheat;
+}
+.main-text-scene-6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.8vw;
+    color: black;
+    letter-spacing: 1px;
+    padding: 5%;
+    transition: all 0.3s ease;
 }
 
 .fire-shape {
-
+    float: left;
+    padding: 2%;
+    shape-outside: circle(50%);
+    width: 32vw;
+    height: 32vw;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
-.fire-red-circle {
-
-}
-.fire-red-triangle:nth-child(1) {
-
+.fire-shape > * {
+    position: absolute;
 }
 
-.fire-orange-circle {
-
-}
-.fire-orange-triangle {
-
-}
-.fire-yellow-circle {
-
+.fire-text {
+    backdrop-filter: invert(0%);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0);
+    padding: 2%;
+    width: fit-content;
+    height:fit-content; 
+    font-size: 5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -813,21 +839,21 @@ PART 7 CONTENT
 
 .preset-font-wood {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2em;
+    font-size: 1.3vw;
     color: rgb(0, 0, 0);
     letter-spacing: 1px;
 }
 
 .preset-font-bark {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4em;
+    font-size: 2.6vw;
     color: rgb(0, 0, 0);
     letter-spacing: 4px;
 }
 
 .preset-font-twig {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3em;
+    font-size: 2vw;
     color: black;
     letter-spacing: 2px;
 }

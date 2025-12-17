@@ -45,6 +45,12 @@ const text_box_s4 = scrolly.querySelectorAll('.main-text-scene-4.animate-text')
 const leaf = scrolly.querySelector('.leaf-s5');
 const scatter = scrolly.querySelector('.scatter-s5');
 const bush = scrolly.querySelector('.bush-parallax');
+/* preload items scene 6 */
+const fire = scrolly.querySelector('.fire-shape');
+const fire_text = scrolly.querySelector('.fire-text');
+const text_s6 = scrolly.querySelector('.main-text-scene-6');
+let textid = 0;
+
 /* items scene 7 */
 
 var map = L.map('map', {
@@ -88,6 +94,9 @@ function handleStepProgress(response) {
         case 'part-5':
             scene5(response)
             break;
+        case 'part-6':
+            scene6(response)
+            break;
         case 'part-7':
             scene7(response)
             break;
@@ -110,6 +119,58 @@ function scene2(response) {
             el.classList.remove('play-fade-in');
         });
     }
+}
+
+function scene6(response) {
+    
+    const text = [
+        "",
+        "Due to reasons such as food supply and land use, deforestation is often a result of a necessary and often undesired outcome in the development of countries. However, not all of forest land cover loss is within control of just anybody. Natural disasters, such as wildfires, accounted for the largest losses, approaching an estimated 13.875 million hectares, or approximately 46.96% of damage just in the year 2024.",
+        "However, not all countries experienced an equal amount of losses with wildfires as the cause. In 2024, of the estimated tree cover loss (in hectares) globally, was over 151 million hectares. Canada, Russia, Brazil, Bolivia, and the United States accounted for a combined "
+    ]
+    if (response.progress > 0.2) {
+        if (textid !== 2) {
+            changeText(text, 2);
+            setFireText("")
+        }
+    }
+    else if (response.progress > 0.05) {
+        if (textid !== 1) {
+            changeText(text, 1)
+            setFireText("46.96%");
+            textid = 1
+        }
+    }
+    else {
+        if (textid !== 0) {
+            changeText(text, 0)
+            setFireText('');
+            textid = 0
+            
+        }
+        
+    }
+}
+function setFireText(textTo) {
+    setTimeout(() => {
+        if (textTo !== "") {
+            fire_text.style.backdropFilter = 'invert(90%)';
+            fire_text.style.boxShadow = 'inset 0 0 10px rgba(0, 0, 0, 0.5)';
+            fire_text.textContent = textTo
+        }else{
+            fire_text.style.backdropFilter = 'invert(0%)';
+            fire_text.style.boxShadow = 'inset 0 0 10px rgba(0, 0, 0, 0)';
+            fire_text.textContent = '';
+        }
+    }, 500);
+
+}
+function changeText(texts, index) {
+    text_s6.style.opacity = '0';
+    setTimeout(() => {
+        text_s6.textContent = texts[index];
+        text_s6.style.opacity = '1';
+    }, 300);
 }
 
 function scene4(response) {
