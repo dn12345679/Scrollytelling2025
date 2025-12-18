@@ -125,31 +125,52 @@ function scene6(response) {
     
     const text = [
         "",
-        "Due to reasons such as food supply and land use, deforestation is often a result of a necessary and often undesired outcome in the development of countries. However, not all of forest land cover loss is within control of just anybody. Natural disasters, such as wildfires, accounted for the largest losses, approaching an estimated 13.875 million hectares, or approximately 46.96% of damage just in the year 2024.",
-        "However, not all countries experienced an equal amount of losses with wildfires as the cause. In 2024, of the estimated tree cover loss (in hectares) globally, was over 151 million hectares. Canada, Russia, Brazil, Bolivia, and the United States accounted for a combined "
+        "Due to reasons such as food supply and land use, deforestation is often a result of a necessary and often undesired outcome in the development of countries. However, not all of forest land cover loss is within control of just anybody. Natural disasters, such as wildfires, accounted for the largest losses, approaching an estimated 13.875 million hectares, or approximately 46.96% of damage just in the year 2024, according to the Global Forest Watch.",
+        "However, not all countries experienced an equal amount of losses with wildfires as the cause. In 2024, of the estimated tree cover loss (in hectares) globally, was over 151 million hectares. Canada, Russia, Brazil, Bolivia, and the United States accounted for a combined 91.75% of all wildfire loss in the world; over 138 million hectares of tree cover. ",
+        "This does seemingly have a deep impact on the overall carbon dioxide emissions by country! From the plot below, it can be seen that the countries with the highest amount of wildfires also appear to  <INSERT 4 QUADRANT SCATTER PLOT WILDFIRE HA VS CO2 HERE>"
     ]
-    if (response.progress > 0.2) {
+    if (response.progress > 0.6) {
+        if (textid !== 3) {
+            textid = 3
+            changeText(text, 3);
+            //setFireText("NONE this should dissappear to 0")
+            fire.style.scale = 0.0; // ie this
+            fire.style.shapeOutside = 'circle(0%)'
+            transitionToBottom();
+            
+        }
+    }
+    else if (response.progress > 0.3) {
         if (textid !== 2) {
+            textid = 2
             changeText(text, 2);
-            setFireText("")
+            setFireText("138m hA")
+            
         }
     }
     else if (response.progress > 0.05) {
         if (textid !== 1) {
+            textid = 1
             changeText(text, 1)
             setFireText("46.96%");
-            textid = 1
+            
         }
     }
     else {
         if (textid !== 0) {
+            textid = 0
             changeText(text, 0)
             setFireText('');
-            textid = 0
             
+            
+            fire.style.scale = 1.0; // reset the change in textid 3
+            fire.style.shapeOutside = 'circle(50%)'
         }
         
     }
+}
+function transitionToBottom() {
+    
 }
 function setFireText(textTo) {
     setTimeout(() => {
@@ -188,7 +209,10 @@ function scene4(response) {
 }
 
 function scene7(response) {
-    if (response.progress > 0.4) {
+    if (response.progress > 0.7) {
+        map.setView([10.2, 24.0], 3)
+    }
+    else if (response.progress > 0.4) {
         map.setView([12.53, 14.45], 10);
     }else {
         map.setView([43.53, 5.45], 10);

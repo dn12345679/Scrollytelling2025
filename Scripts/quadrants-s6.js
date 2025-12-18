@@ -1,0 +1,14 @@
+let data; 
+async function getData() {
+    const d = await fetch("./Data/wf.json").then(r => r.json());
+    data = d;
+    return d;
+}
+await getData() // safety
+
+// future ref: columns: Entity: String, Year: number, area_ha: number, co2: number(float)
+console.log(data[0])
+
+// idea: plot x = area_ha (loss) vs y = co2 (emission)
+// divide by 1,000,000 (there should be at most 5 ticks on x excluding 0, from 10 to 50), and 5 ticks on y excluding 0 from 200 to 1000
+

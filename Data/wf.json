@@ -1,0 +1,1508 @@
+[
+  {
+    "Entity": "Afghanistan",
+    "Year": 2024,
+    "area_ha": 1114,
+    "co2": 120663.97
+  },
+  {
+    "Entity": "Akrotiri and Dhekelia",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 601.86
+  },
+  {
+    "Entity": "Aland Islands",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Albania",
+    "Year": 2024,
+    "area_ha": 62291,
+    "co2": 249432.62
+  },
+  {
+    "Entity": "Algeria",
+    "Year": 2024,
+    "area_ha": 25372,
+    "co2": 2152862.8
+  },
+  {
+    "Entity": "American Samoa",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Andorra",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 348.32
+  },
+  {
+    "Entity": "Angola",
+    "Year": 2024,
+    "area_ha": 38592704,
+    "co2": 409995740
+  },
+  {
+    "Entity": "Anguilla",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Antigua and Barbuda",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 2537.83
+  },
+  {
+    "Entity": "Argentina",
+    "Year": 2024,
+    "area_ha": 3002592,
+    "co2": 55133156
+  },
+  {
+    "Entity": "Armenia",
+    "Year": 2024,
+    "area_ha": 2835,
+    "co2": 57812.42
+  },
+  {
+    "Entity": "Aruba",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 15296.46
+  },
+  {
+    "Entity": "Australia",
+    "Year": 2024,
+    "area_ha": 31066002,
+    "co2": 350742460
+  },
+  {
+    "Entity": "Austria",
+    "Year": 2024,
+    "area_ha": 1573,
+    "co2": 32608.05
+  },
+  {
+    "Entity": "Azerbaijan",
+    "Year": 2024,
+    "area_ha": 15072,
+    "co2": 151312.44
+  },
+  {
+    "Entity": "Bahamas",
+    "Year": 2024,
+    "area_ha": 29491,
+    "co2": 834102.7
+  },
+  {
+    "Entity": "Bahrain",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 7173.66
+  },
+  {
+    "Entity": "Bangladesh",
+    "Year": 2024,
+    "area_ha": 174806,
+    "co2": 3640336
+  },
+  {
+    "Entity": "Barbados",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Belarus",
+    "Year": 2024,
+    "area_ha": 6749,
+    "co2": 157224.69
+  },
+  {
+    "Entity": "Belgium",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 321393.62
+  },
+  {
+    "Entity": "Belize",
+    "Year": 2024,
+    "area_ha": 136868,
+    "co2": 3380854
+  },
+  {
+    "Entity": "Benin",
+    "Year": 2024,
+    "area_ha": 792129,
+    "co2": 7430928.5
+  },
+  {
+    "Entity": "Bermuda",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Bhutan",
+    "Year": 2024,
+    "area_ha": 12307,
+    "co2": 227493.44
+  },
+  {
+    "Entity": "Bolivia",
+    "Year": 2024,
+    "area_ha": 16436941,
+    "co2": 359365340
+  },
+  {
+    "Entity": "Bonaire Sint Eustatius and Saba",
+    "Year": 2024,
+    "area_ha": 161,
+    "co2": 12335.699
+  },
+  {
+    "Entity": "Bosnia and Herzegovina",
+    "Year": 2024,
+    "area_ha": 32780,
+    "co2": 370856.2
+  },
+  {
+    "Entity": "Botswana",
+    "Year": 2024,
+    "area_ha": 941996,
+    "co2": 15826101
+  },
+  {
+    "Entity": "Bouvet Island",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Brazil",
+    "Year": 2024,
+    "area_ha": 43714092,
+    "co2": 845412800
+  },
+  {
+    "Entity": "British Indian Ocean Territory",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "British Virgin Islands",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Brunei",
+    "Year": 2024,
+    "area_ha": 1348,
+    "co2": 307766.44
+  },
+  {
+    "Entity": "Bulgaria",
+    "Year": 2024,
+    "area_ha": 51512,
+    "co2": 432547.34
+  },
+  {
+    "Entity": "Burkina Faso",
+    "Year": 2024,
+    "area_ha": 2490030,
+    "co2": 18223506
+  },
+  {
+    "Entity": "Burundi",
+    "Year": 2024,
+    "area_ha": 54629,
+    "co2": 824424
+  },
+  {
+    "Entity": "Cambodia",
+    "Year": 2024,
+    "area_ha": 2803942,
+    "co2": 20636668
+  },
+  {
+    "Entity": "Cameroon",
+    "Year": 2024,
+    "area_ha": 3043345,
+    "co2": 30250158
+  },
+  {
+    "Entity": "Canada",
+    "Year": 2024,
+    "area_ha": 5117483,
+    "co2": 622209600
+  },
+  {
+    "Entity": "Cape Verde",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 1684547.4
+  },
+  {
+    "Entity": "Cayman Islands",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Central African Republic",
+    "Year": 2024,
+    "area_ha": 13187613,
+    "co2": 104383340
+  },
+  {
+    "Entity": "Chad",
+    "Year": 2024,
+    "area_ha": 3875037,
+    "co2": 33631340
+  },
+  {
+    "Entity": "Chile",
+    "Year": 2024,
+    "area_ha": 236495,
+    "co2": 7570356.5
+  },
+  {
+    "Entity": "China",
+    "Year": 2024,
+    "area_ha": 2844021,
+    "co2": 59889320
+  },
+  {
+    "Entity": "Christmas Island",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Cocos Islands",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Colombia",
+    "Year": 2024,
+    "area_ha": 1939438,
+    "co2": 30764760
+  },
+  {
+    "Entity": "Comoros",
+    "Year": 2024,
+    "area_ha": 7701,
+    "co2": 70471.58
+  },
+  {
+    "Entity": "Congo",
+    "Year": 2024,
+    "area_ha": 2108876,
+    "co2": 27147298
+  },
+  {
+    "Entity": "Cook Islands",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Costa Rica",
+    "Year": 2024,
+    "area_ha": 106841,
+    "co2": 829684.5
+  },
+  {
+    "Entity": "Cote d'Ivoire",
+    "Year": 2024,
+    "area_ha": 1772000,
+    "co2": 18685698
+  },
+  {
+    "Entity": "Croatia",
+    "Year": 2024,
+    "area_ha": 11771,
+    "co2": 132402.78
+  },
+  {
+    "Entity": "Cuba",
+    "Year": 2024,
+    "area_ha": 481343,
+    "co2": 3147818.5
+  },
+  {
+    "Entity": "Curacao",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 1505.58
+  },
+  {
+    "Entity": "Cyprus",
+    "Year": 2024,
+    "area_ha": 1938,
+    "co2": 99885.64
+  },
+  {
+    "Entity": "Czechia",
+    "Year": 2024,
+    "area_ha": 224,
+    "co2": 55878.41
+  },
+  {
+    "Entity": "Democratic Republic of Congo",
+    "Year": 2024,
+    "area_ha": 44525260,
+    "co2": 486453700
+  },
+  {
+    "Entity": "Denmark",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 31484.06
+  },
+  {
+    "Entity": "Djibouti",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 229031.28
+  },
+  {
+    "Entity": "Dominica",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 725.79
+  },
+  {
+    "Entity": "Dominican Republic",
+    "Year": 2024,
+    "area_ha": 40126,
+    "co2": 959388.9
+  },
+  {
+    "Entity": "East Timor",
+    "Year": 2024,
+    "area_ha": 19245,
+    "co2": 175926.44
+  },
+  {
+    "Entity": "Ecuador",
+    "Year": 2024,
+    "area_ha": 333011,
+    "co2": 13154751
+  },
+  {
+    "Entity": "Egypt",
+    "Year": 2024,
+    "area_ha": 15526,
+    "co2": 4099136.2
+  },
+  {
+    "Entity": "El Salvador",
+    "Year": 2024,
+    "area_ha": 22706,
+    "co2": 790000.25
+  },
+  {
+    "Entity": "Equatorial Guinea",
+    "Year": 2024,
+    "area_ha": 4323,
+    "co2": 192536.6
+  },
+  {
+    "Entity": "Eritrea",
+    "Year": 2024,
+    "area_ha": 7308,
+    "co2": 16563759
+  },
+  {
+    "Entity": "Estonia",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 4558
+  },
+  {
+    "Entity": "Eswatini",
+    "Year": 2024,
+    "area_ha": 110524,
+    "co2": 2749235.8
+  },
+  {
+    "Entity": "Ethiopia",
+    "Year": 2024,
+    "area_ha": 3706838,
+    "co2": 40873604
+  },
+  {
+    "Entity": "Falkland Islands",
+    "Year": 2024,
+    "area_ha": 134,
+    "co2": 0
+  },
+  {
+    "Entity": "Faroe Islands",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Fiji",
+    "Year": 2024,
+    "area_ha": 28211,
+    "co2": 2089943.6
+  },
+  {
+    "Entity": "Finland",
+    "Year": 2024,
+    "area_ha": 1485,
+    "co2": 142053.58
+  },
+  {
+    "Entity": "France",
+    "Year": 2024,
+    "area_ha": 14826,
+    "co2": 1042012.5
+  },
+  {
+    "Entity": "French Guiana",
+    "Year": 2024,
+    "area_ha": 25287,
+    "co2": 733500.44
+  },
+  {
+    "Entity": "French Polynesia",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "French Southern Territories",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Gabon",
+    "Year": 2024,
+    "area_ha": 238449,
+    "co2": 2772957.2
+  },
+  {
+    "Entity": "Gambia",
+    "Year": 2024,
+    "area_ha": 142540,
+    "co2": 1802723.2
+  },
+  {
+    "Entity": "Georgia",
+    "Year": 2024,
+    "area_ha": 20201,
+    "co2": 169137.5
+  },
+  {
+    "Entity": "Germany",
+    "Year": 2024,
+    "area_ha": 6806,
+    "co2": 518617.7
+  },
+  {
+    "Entity": "Ghana",
+    "Year": 2024,
+    "area_ha": 4732731,
+    "co2": 38484800
+  },
+  {
+    "Entity": "Gibraltar",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 1640.65
+  },
+  {
+    "Entity": "Greece",
+    "Year": 2024,
+    "area_ha": 52218,
+    "co2": 5179919.5
+  },
+  {
+    "Entity": "Greenland",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 117606.21
+  },
+  {
+    "Entity": "Grenada",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 845.72
+  },
+  {
+    "Entity": "Guadeloupe",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 8448.8
+  },
+  {
+    "Entity": "Guam",
+    "Year": 2024,
+    "area_ha": 685,
+    "co2": 155317.42
+  },
+  {
+    "Entity": "Guatemala",
+    "Year": 2024,
+    "area_ha": 676940,
+    "co2": 12018545
+  },
+  {
+    "Entity": "Guernsey",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Guinea",
+    "Year": 2024,
+    "area_ha": 6285796,
+    "co2": 72532360
+  },
+  {
+    "Entity": "Guinea-Bissau",
+    "Year": 2024,
+    "area_ha": 385116,
+    "co2": 8043479
+  },
+  {
+    "Entity": "Guyana",
+    "Year": 2024,
+    "area_ha": 556615,
+    "co2": 5638783
+  },
+  {
+    "Entity": "Haiti",
+    "Year": 2024,
+    "area_ha": 13372,
+    "co2": 142899.03
+  },
+  {
+    "Entity": "Heard Island and McDonald Islands",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Honduras",
+    "Year": 2024,
+    "area_ha": 1037256,
+    "co2": 8996369
+  },
+  {
+    "Entity": "Hong Kong",
+    "Year": 2024,
+    "area_ha": 195,
+    "co2": 38787.28
+  },
+  {
+    "Entity": "Hungary",
+    "Year": 2024,
+    "area_ha": 3587,
+    "co2": 78228.55
+  },
+  {
+    "Entity": "Iceland",
+    "Year": 2024,
+    "area_ha": 40240,
+    "co2": 0
+  },
+  {
+    "Entity": "India",
+    "Year": 2024,
+    "area_ha": 3847091,
+    "co2": 44208436
+  },
+  {
+    "Entity": "Indonesia",
+    "Year": 2024,
+    "area_ha": 1197480,
+    "co2": 73307970
+  },
+  {
+    "Entity": "Iran",
+    "Year": 2024,
+    "area_ha": 481160,
+    "co2": 17925346
+  },
+  {
+    "Entity": "Iraq",
+    "Year": 2024,
+    "area_ha": 292491,
+    "co2": 16399578
+  },
+  {
+    "Entity": "Ireland",
+    "Year": 2024,
+    "area_ha": 615,
+    "co2": 11854.39
+  },
+  {
+    "Entity": "Isle of Man",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Israel",
+    "Year": 2024,
+    "area_ha": 6848,
+    "co2": 290908.25
+  },
+  {
+    "Entity": "Italy",
+    "Year": 2024,
+    "area_ha": 81226,
+    "co2": 2376350.5
+  },
+  {
+    "Entity": "Jamaica",
+    "Year": 2024,
+    "area_ha": 6120,
+    "co2": 140349.17
+  },
+  {
+    "Entity": "Japan",
+    "Year": 2024,
+    "area_ha": 6060,
+    "co2": 5243137.5
+  },
+  {
+    "Entity": "Jersey",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Jordan",
+    "Year": 2024,
+    "area_ha": 353,
+    "co2": 35490.31
+  },
+  {
+    "Entity": "Kazakhstan",
+    "Year": 2024,
+    "area_ha": 284193,
+    "co2": 10834623
+  },
+  {
+    "Entity": "Kenya",
+    "Year": 2024,
+    "area_ha": 247189,
+    "co2": 3451091.2
+  },
+  {
+    "Entity": "Kiribati",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Kosovo",
+    "Year": 2024,
+    "area_ha": 12872,
+    "co2": 85747.96
+  },
+  {
+    "Entity": "Kuwait",
+    "Year": 2024,
+    "area_ha": 532,
+    "co2": 339249.12
+  },
+  {
+    "Entity": "Kyrgyzstan",
+    "Year": 2024,
+    "area_ha": 1701,
+    "co2": 64513
+  },
+  {
+    "Entity": "Laos",
+    "Year": 2024,
+    "area_ha": 3937034,
+    "co2": 77701070
+  },
+  {
+    "Entity": "Latvia",
+    "Year": 2024,
+    "area_ha": 157,
+    "co2": 6353.73
+  },
+  {
+    "Entity": "Lebanon",
+    "Year": 2024,
+    "area_ha": 10051,
+    "co2": 173074.56
+  },
+  {
+    "Entity": "Lesotho",
+    "Year": 2024,
+    "area_ha": 66826,
+    "co2": 989561.25
+  },
+  {
+    "Entity": "Liberia",
+    "Year": 2024,
+    "area_ha": 551515,
+    "co2": 16716245
+  },
+  {
+    "Entity": "Libya",
+    "Year": 2024,
+    "area_ha": 2829,
+    "co2": 2766471.5
+  },
+  {
+    "Entity": "Liechtenstein",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Lithuania",
+    "Year": 2024,
+    "area_ha": 666,
+    "co2": 8861
+  },
+  {
+    "Entity": "Luxembourg",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 3204.42
+  },
+  {
+    "Entity": "Macao",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Madagascar",
+    "Year": 2024,
+    "area_ha": 4701825,
+    "co2": 61864590
+  },
+  {
+    "Entity": "Malawi",
+    "Year": 2024,
+    "area_ha": 617168,
+    "co2": 5928446.5
+  },
+  {
+    "Entity": "Malaysia",
+    "Year": 2024,
+    "area_ha": 113020,
+    "co2": 8365400
+  },
+  {
+    "Entity": "Maldives",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Mali",
+    "Year": 2024,
+    "area_ha": 3991939,
+    "co2": 30494974
+  },
+  {
+    "Entity": "Malta",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Marshall Islands",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Martinique",
+    "Year": 2024,
+    "area_ha": 174,
+    "co2": 6225.9297
+  },
+  {
+    "Entity": "Mauritania",
+    "Year": 2024,
+    "area_ha": 90091,
+    "co2": 1050324
+  },
+  {
+    "Entity": "Mauritius",
+    "Year": 2024,
+    "area_ha": 730,
+    "co2": 0
+  },
+  {
+    "Entity": "Mayotte",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 10567.62
+  },
+  {
+    "Entity": "Mexico",
+    "Year": 2024,
+    "area_ha": 3470503,
+    "co2": 99264280
+  },
+  {
+    "Entity": "Micronesia (country)",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Moldova",
+    "Year": 2024,
+    "area_ha": 2773,
+    "co2": 36542.86
+  },
+  {
+    "Entity": "Monaco",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Mongolia",
+    "Year": 2024,
+    "area_ha": 59337,
+    "co2": 2220897.5
+  },
+  {
+    "Entity": "Montenegro",
+    "Year": 2024,
+    "area_ha": 23891,
+    "co2": 89223.45
+  },
+  {
+    "Entity": "Montserrat",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 29946.96
+  },
+  {
+    "Entity": "Morocco",
+    "Year": 2024,
+    "area_ha": 5129,
+    "co2": 152083.55
+  },
+  {
+    "Entity": "Mozambique",
+    "Year": 2024,
+    "area_ha": 15689374,
+    "co2": 123056510
+  },
+  {
+    "Entity": "Myanmar",
+    "Year": 2024,
+    "area_ha": 5564356,
+    "co2": 67894780
+  },
+  {
+    "Entity": "Namibia",
+    "Year": 2024,
+    "area_ha": 742665,
+    "co2": 6682758.5
+  },
+  {
+    "Entity": "Nauru",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Nepal",
+    "Year": 2024,
+    "area_ha": 402294,
+    "co2": 3624174.2
+  },
+  {
+    "Entity": "Netherlands",
+    "Year": 2024,
+    "area_ha": 276,
+    "co2": 243127.84
+  },
+  {
+    "Entity": "New Caledonia",
+    "Year": 2024,
+    "area_ha": 27505,
+    "co2": 1381516.4
+  },
+  {
+    "Entity": "New Zealand",
+    "Year": 2024,
+    "area_ha": 23632,
+    "co2": 3217138.8
+  },
+  {
+    "Entity": "Nicaragua",
+    "Year": 2024,
+    "area_ha": 759127,
+    "co2": 8309498.5
+  },
+  {
+    "Entity": "Niger",
+    "Year": 2024,
+    "area_ha": 369425,
+    "co2": 2730308.5
+  },
+  {
+    "Entity": "Nigeria",
+    "Year": 2024,
+    "area_ha": 6623014,
+    "co2": 51771732
+  },
+  {
+    "Entity": "Niue",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Norfolk Island",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "North Korea",
+    "Year": 2024,
+    "area_ha": 15175,
+    "co2": 784450.5
+  },
+  {
+    "Entity": "North Macedonia",
+    "Year": 2024,
+    "area_ha": 86630,
+    "co2": 413111.56
+  },
+  {
+    "Entity": "Northern Cyprus",
+    "Year": 2024,
+    "area_ha": 802,
+    "co2": 5689.06
+  },
+  {
+    "Entity": "Northern Mariana Islands",
+    "Year": 2024,
+    "area_ha": 657,
+    "co2": 0
+  },
+  {
+    "Entity": "Norway",
+    "Year": 2024,
+    "area_ha": 195,
+    "co2": 578225.2
+  },
+  {
+    "Entity": "Oman",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 6371502.5
+  },
+  {
+    "Entity": "Pakistan",
+    "Year": 2024,
+    "area_ha": 232590,
+    "co2": 5339526
+  },
+  {
+    "Entity": "Palau",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Palestine",
+    "Year": 2024,
+    "area_ha": 1279,
+    "co2": 73638.91
+  },
+  {
+    "Entity": "Panama",
+    "Year": 2024,
+    "area_ha": 80945,
+    "co2": 1320334.6
+  },
+  {
+    "Entity": "Papua New Guinea",
+    "Year": 2024,
+    "area_ha": 313375,
+    "co2": 7896725.5
+  },
+  {
+    "Entity": "Paraguay",
+    "Year": 2024,
+    "area_ha": 2858337,
+    "co2": 49529340
+  },
+  {
+    "Entity": "Peru",
+    "Year": 2024,
+    "area_ha": 1336462,
+    "co2": 24734534
+  },
+  {
+    "Entity": "Philippines",
+    "Year": 2024,
+    "area_ha": 349986,
+    "co2": 10950617
+  },
+  {
+    "Entity": "Pitcairn",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Poland",
+    "Year": 2024,
+    "area_ha": 2923,
+    "co2": 153819.34
+  },
+  {
+    "Entity": "Portugal",
+    "Year": 2024,
+    "area_ha": 167874,
+    "co2": 5485003.5
+  },
+  {
+    "Entity": "Puerto Rico",
+    "Year": 2024,
+    "area_ha": 941,
+    "co2": 43774.32
+  },
+  {
+    "Entity": "Qatar",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 23996.07
+  },
+  {
+    "Entity": "Reunion",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Romania",
+    "Year": 2024,
+    "area_ha": 63536,
+    "co2": 528357.5
+  },
+  {
+    "Entity": "Russia",
+    "Year": 2024,
+    "area_ha": 12454984,
+    "co2": 548817200
+  },
+  {
+    "Entity": "Rwanda",
+    "Year": 2024,
+    "area_ha": 18068,
+    "co2": 313699.56
+  },
+  {
+    "Entity": "Saint Barthelemy",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Saint Helena",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 2147.61
+  },
+  {
+    "Entity": "Saint Kitts and Nevis",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 24463.82
+  },
+  {
+    "Entity": "Saint Lucia",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Saint Martin (French part)",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Saint Pierre and Miquelon",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Saint Vincent and the Grenadines",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 888343.4
+  },
+  {
+    "Entity": "Samoa",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "San Marino",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Sao Tome and Principe",
+    "Year": 2024,
+    "area_ha": 234,
+    "co2": 0
+  },
+  {
+    "Entity": "Saudi Arabia",
+    "Year": 2024,
+    "area_ha": 7458,
+    "co2": 16062259
+  },
+  {
+    "Entity": "Senegal",
+    "Year": 2024,
+    "area_ha": 2203849,
+    "co2": 19579620
+  },
+  {
+    "Entity": "Serbia",
+    "Year": 2024,
+    "area_ha": 66864,
+    "co2": 461441.3
+  },
+  {
+    "Entity": "Seychelles",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Sierra Leone",
+    "Year": 2024,
+    "area_ha": 1890111,
+    "co2": 35441700
+  },
+  {
+    "Entity": "Singapore",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 186946.6
+  },
+  {
+    "Entity": "Sint Maarten (Dutch part)",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Slovakia",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 71905.79
+  },
+  {
+    "Entity": "Slovenia",
+    "Year": 2024,
+    "area_ha": 207,
+    "co2": 8667.23
+  },
+  {
+    "Entity": "Solomon Islands",
+    "Year": 2024,
+    "area_ha": 1881,
+    "co2": 57548.48
+  },
+  {
+    "Entity": "Somalia",
+    "Year": 2024,
+    "area_ha": 13687,
+    "co2": 1067428
+  },
+  {
+    "Entity": "South Africa",
+    "Year": 2024,
+    "area_ha": 3301879,
+    "co2": 73743920
+  },
+  {
+    "Entity": "South Georgia and the South Sandwich Islands",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "South Korea",
+    "Year": 2024,
+    "area_ha": 42,
+    "co2": 1335847.8
+  },
+  {
+    "Entity": "South Sudan",
+    "Year": 2024,
+    "area_ha": 21076034,
+    "co2": 219569600
+  },
+  {
+    "Entity": "Spain",
+    "Year": 2024,
+    "area_ha": 64737,
+    "co2": 2229519.2
+  },
+  {
+    "Entity": "Sri Lanka",
+    "Year": 2024,
+    "area_ha": 15654,
+    "co2": 1731251
+  },
+  {
+    "Entity": "Sudan",
+    "Year": 2024,
+    "area_ha": 3926601,
+    "co2": 33136166
+  },
+  {
+    "Entity": "Suriname",
+    "Year": 2024,
+    "area_ha": 140468,
+    "co2": 2193436.8
+  },
+  {
+    "Entity": "Svalbard and Jan Mayen",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Sweden",
+    "Year": 2024,
+    "area_ha": 972,
+    "co2": 769447.4
+  },
+  {
+    "Entity": "Switzerland",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 12978.23
+  },
+  {
+    "Entity": "Syria",
+    "Year": 2024,
+    "area_ha": 64168,
+    "co2": 564826.56
+  },
+  {
+    "Entity": "Taiwan",
+    "Year": 2024,
+    "area_ha": 166,
+    "co2": 836101
+  },
+  {
+    "Entity": "Tajikistan",
+    "Year": 2024,
+    "area_ha": 1967,
+    "co2": 80617.07
+  },
+  {
+    "Entity": "Tanzania",
+    "Year": 2024,
+    "area_ha": 7398235,
+    "co2": 72830660
+  },
+  {
+    "Entity": "Thailand",
+    "Year": 2024,
+    "area_ha": 2008339,
+    "co2": 9673084
+  },
+  {
+    "Entity": "Togo",
+    "Year": 2024,
+    "area_ha": 527255,
+    "co2": 4267237
+  },
+  {
+    "Entity": "Tokelau",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Tonga",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Trinidad and Tobago",
+    "Year": 2024,
+    "area_ha": 7035,
+    "co2": 143787.64
+  },
+  {
+    "Entity": "Tunisia",
+    "Year": 2024,
+    "area_ha": 3349,
+    "co2": 77815.78
+  },
+  {
+    "Entity": "Turkey",
+    "Year": 2024,
+    "area_ha": 268932,
+    "co2": 3933474.8
+  },
+  {
+    "Entity": "Turkmenistan",
+    "Year": 2024,
+    "area_ha": 11888,
+    "co2": 644385.25
+  },
+  {
+    "Entity": "Turks and Caicos Islands",
+    "Year": 2024,
+    "area_ha": 205,
+    "co2": 0
+  },
+  {
+    "Entity": "Tuvalu",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Uganda",
+    "Year": 2024,
+    "area_ha": 1044733,
+    "co2": 10593924
+  },
+  {
+    "Entity": "Ukraine",
+    "Year": 2024,
+    "area_ha": 967889,
+    "co2": 8184024
+  },
+  {
+    "Entity": "United Arab Emirates",
+    "Year": 2024,
+    "area_ha": 239,
+    "co2": 6841579.5
+  },
+  {
+    "Entity": "United Kingdom",
+    "Year": 2024,
+    "area_ha": 3449,
+    "co2": 176580.23
+  },
+  {
+    "Entity": "United States",
+    "Year": 2024,
+    "area_ha": 4136739,
+    "co2": 159623200
+  },
+  {
+    "Entity": "United States Minor Outlying Islands",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "United States Virgin Islands",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Uruguay",
+    "Year": 2024,
+    "area_ha": 11593,
+    "co2": 296498.1
+  },
+  {
+    "Entity": "Uzbekistan",
+    "Year": 2024,
+    "area_ha": 29459,
+    "co2": 1019052.25
+  },
+  {
+    "Entity": "Vanuatu",
+    "Year": 2024,
+    "area_ha": 6118,
+    "co2": 424664.4
+  },
+  {
+    "Entity": "Vatican",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Venezuela",
+    "Year": 2024,
+    "area_ha": 8403487,
+    "co2": 109202660
+  },
+  {
+    "Entity": "Vietnam",
+    "Year": 2024,
+    "area_ha": 526402,
+    "co2": 11861384
+  },
+  {
+    "Entity": "Wallis and Futuna",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 0
+  },
+  {
+    "Entity": "Western Sahara",
+    "Year": 2024,
+    "area_ha": 0,
+    "co2": 892.77
+  },
+  {
+    "Entity": "Yemen",
+    "Year": 2024,
+    "area_ha": 18,
+    "co2": 4432960.5
+  },
+  {
+    "Entity": "Zambia",
+    "Year": 2024,
+    "area_ha": 18210084,
+    "co2": 159414720
+  },
+  {
+    "Entity": "Zimbabwe",
+    "Year": 2024,
+    "area_ha": 1315188,
+    "co2": 16708311
+  }
+]
