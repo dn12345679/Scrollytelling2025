@@ -13,7 +13,7 @@ textarea {
 body {
     zoom: 100%;
     -ms-zoom: 100%;
-    -moz-transform: scale(1.0);
+    
 }
 
 html {
@@ -22,6 +22,7 @@ html {
     line-height: 1.4;
     overflow-x: hidden;
 }
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -60,7 +61,7 @@ GLOBAL STATES
 #main-content {
 
     scroll-behavior:smooth;
-
+    
     display: flex;
     flex-direction: column;
 }
@@ -387,6 +388,7 @@ PART 2 CONTENT
     flex-direction: column;
     height: 100vh;
     width: 100vw;
+    align-items: center;
 }
 
 #deforestation_map {
@@ -394,7 +396,7 @@ PART 2 CONTENT
     height: 40vw;
     
     border-radius: 70px;
-    filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.2));
+    
 }
 .main-text-scene-2 {
     min-width: 100vw;
@@ -721,6 +723,7 @@ THAT ONE LEAF IN SCENE 5
 }
 .s-point {
     position: absolute;
+    z-index: 999;
     width: 1vw;
     height: 1vw;
     border-radius: 60px;
@@ -771,6 +774,17 @@ PART 6 CONTENT
     left: 1vw;
     height: 100vh;
     background: wheat;
+    filter: drop-shadow(10px 0px 6px rgba(0, 0, 0, 0.2));
+    padding-bottom: 1vh;
+}
+.quadrants-s6 {
+    position: absolute;
+    z-index: 999;
+    height: 40vw;
+    width: 60vw;
+
+    bottom: 10vh;
+    left: 10vw;
 }
 .main-text-scene-6 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

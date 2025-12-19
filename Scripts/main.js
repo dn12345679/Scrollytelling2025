@@ -209,13 +209,21 @@ function scene4(response) {
 }
 
 function scene7(response) {
+    var circle = L.circle([-25.2744, 153.7751], {
+        color: 'red',
+        fillColor: '#f03',
+        fillOpacity: 0.5,
+        radius: 1000
+    }).addTo(map).bindPopup("Hello")
     if (response.progress > 0.7) {
-        map.setView([10.2, 24.0], 3)
+        map.setView([0, 0], 3)
     }
-    else if (response.progress > 0.4) {
-        map.setView([12.53, 14.45], 10);
+    else if (response.progress > 0.5) {
+        map.setView([-30.2744, 153.7751], 6);
+
     }else {
-        map.setView([43.53, 5.45], 10);
+        map.setView([-25.2744, 133.7751], 5);
+        circle.setRadius(800);
     }
 
 }
