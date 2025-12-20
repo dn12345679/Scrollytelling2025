@@ -49,6 +49,9 @@ const bush = scrolly.querySelector('.bush-parallax');
 const fire = scrolly.querySelector('.fire-shape');
 const fire_text = scrolly.querySelector('.fire-text');
 const text_s6 = scrolly.querySelector('.main-text-scene-6');
+const plot_s6 = scrolly.querySelector('.quadrants-s6');
+const static_plot_s6 = scrolly.querySelector('#scene6-static');
+
 let textid = 0;
 
 /* items scene 7 */
@@ -69,13 +72,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
 
-var circle = L.circle([43.53, 5.45], {
-    color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.5,
-    radius: 500
-}).addTo(map);
-
+var markerGroupCurrent = L.layerGroup().addTo(map)
 
 function handleStepProgress(response) {
     switch (response.element.id) {
@@ -121,6 +118,8 @@ function scene2(response) {
     }
 }
 
+
+
 function scene6(response) {
     
     const text = [
@@ -129,68 +128,87 @@ function scene6(response) {
         "However, not all countries experienced an equal amount of losses with wildfires as the cause. In 2024, of the estimated tree cover loss (in hectares) globally, was over 151 million hectares. Canada, Russia, Brazil, Bolivia, and the United States accounted for a combined 91.75% of all wildfire loss in the world; over 138 million hectares of tree cover. ",
         "This does seemingly have a deep impact on the overall carbon dioxide emissions by country! From the plot below, it can be seen that the countries with the highest amount of wildfires also appear to  <INSERT 4 QUADRANT SCATTER PLOT WILDFIRE HA VS CO2 HERE>"
     ]
+    
+    let targetId;
     if (response.progress > 0.6) {
-        if (textid !== 3) {
-            textid = 3
-            changeText(text, 3);
-            //setFireText("NONE this should dissappear to 0")
-            fire.style.scale = 0.0; // ie this
-            fire.style.shapeOutside = 'circle(0%)'
-            transitionToBottom();
-            
-        }
+        targetId = 3;
     }
     else if (response.progress > 0.3) {
-        if (textid !== 2) {
-            textid = 2
-            changeText(text, 2);
-            setFireText("138m hA")
-            
-        }
+        targetId = 2;
     }
     else if (response.progress > 0.05) {
-        if (textid !== 1) {
-            textid = 1
-            changeText(text, 1)
-            setFireText("46.96%");
-            
-        }
+        targetId = 1;
     }
     else {
-        if (textid !== 0) {
-            textid = 0
-            changeText(text, 0)
-            setFireText('');
-            
-            
-            fire.style.scale = 1.0; // reset the change in textid 3
-            fire.style.shapeOutside = 'circle(50%)'
-        }
-        
+        targetId = 0;
+
     }
-}
-function transitionToBottom() {
-    
-}
-function setFireText(textTo) {
-    setTimeout(() => {
-        if (textTo !== "") {
-            fire_text.style.backdropFilter = 'invert(90%)';
-            fire_text.style.boxShadow = 'inset 0 0 10px rgba(0, 0, 0, 0.5)';
-            fire_text.textContent = textTo
-        }else{
-            fire_text.style.backdropFilter = 'invert(0%)';
-            fire_text.style.boxShadow = 'inset 0 0 10px rgba(0, 0, 0, 0)';
-            fire_text.textContent = '';
+
+    if (targetId !== textid) {
+        textid= targetId
+        changeText(text, targetId);
+        if (targetId === 3) {
+            setFireText("");
+            fire.style.scale = '0.0';
+            fire.style.shapeOutside = 'circle(0%)';
+            static_plot_s6.style.shapeOutside = 'circle(50%)';
+            static_plot_s6.style.visibility = 'visible';
+            transitionToBottom();
+        } else if (targetId === 2) {
+            fire.style.scale = '1.0';
+            fire.style.shapeOutside = 'circle(50%)';
+            static_plot_s6.style.shapeOutside = 'circle(0%)';
+            static_plot_s6.style.visibility = 'hidden';
+            setFireText("138m hA");
+        } else if (targetId === 1) {
+            fire.style.scale = '1.0';
+            fire.style.shapeOutside = 'circle(50%)';
+            static_plot_s6.style.shapeOutside = 'circle(0%)';
+            static_plot_s6.style.visibility = 'hidden';
+            setFireText("46.96%");
+        } else {
+            fire.style.scale = '1.0';
+            fire.style.shapeOutside = 'circle(50%)';
+            static_plot_s6.style.visibility = 'hidden';
+            static_plot_s6.style.shapeOutside = 'circle(0%)';
+            setFireText('');
         }
-    }, 500);
+    }
 
 }
+function transitionToBottom() {
+    plot_s6.style.scale = '1.0';
+    plot_s6.style.opacity = '1.0'
+}
+
+function setFireText(textTo) {
+
+
+    if (!textTo) {
+        fire_text.style.opacity = '0';
+        fire_text.textContent = '';
+        return;
+    }
+
+    fire_text.textContent = textTo;
+
+
+    void fire_text.offsetHeight;
+    fire_text.style.opacity = '1';
+
+
+}
+
 function changeText(texts, index) {
     text_s6.style.opacity = '0';
     setTimeout(() => {
         text_s6.textContent = texts[index];
-        text_s6.style.opacity = '1';
+        
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                text_s6.style.opacity = '1';
+            });
+        });
     }, 300);
 }
 
@@ -209,23 +227,41 @@ function scene4(response) {
 }
 
 function scene7(response) {
-    var circle = L.circle([-25.2744, 153.7751], {
-        color: 'red',
-        fillColor: '#f03',
-        fillOpacity: 0.5,
-        radius: 1000
-    }).addTo(map).bindPopup("Hello")
-    if (response.progress > 0.7) {
+    
+    if (response.progress > 0.8) {
+        resetMarkingsAll();
         map.setView([0, 0], 3)
+
     }
     else if (response.progress > 0.5) {
-        map.setView([-30.2744, 153.7751], 6);
-
-    }else {
+        resetMarkingsAll();
         map.setView([-25.2744, 133.7751], 5);
-        circle.setRadius(800);
+        
+
+    }else if (response.progress > 0.05) {
+        resetMarkingsAll();
+        
+        map.setView([-30.2744, 153.7751], 6);
+        
+        L.circle([-32.55, 149.46], 300000, {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.1
+        }).addTo(markerGroupCurrent).bindPopup("New South Wales")
+
+        L.circle([-27.5, 151.46], 250000, {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.1
+        }).addTo(markerGroupCurrent).bindPopup("Hello")
+    } else{
+        resetMarkingsAll();
     }
 
+}
+
+function resetMarkingsAll() {
+    markerGroupCurrent.clearLayers();
 }
 
 

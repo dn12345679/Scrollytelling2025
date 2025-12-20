@@ -667,7 +667,7 @@ THAT ONE LEAF IN SCENE 5
     z-index: 5;
 }
 
-
+.quadrants-s6,
 .scatter-s5 {
     position: sticky;
     left: 1px;
@@ -677,6 +677,8 @@ THAT ONE LEAF IN SCENE 5
     scale: 0.0;
     opacity: 0.0;
 }
+
+.quadrants-s6-x,
 .scatter-s5-x {
     position: absolute;
     bottom: 10vh;
@@ -685,6 +687,8 @@ THAT ONE LEAF IN SCENE 5
     width: 60vw;
     height: 1vh;
 }
+
+.quadrants-s6-xlab,
 .scatter-s5-xlab {
     width: 100%;
     height: 100%;
@@ -694,6 +698,7 @@ THAT ONE LEAF IN SCENE 5
     align-items: start;
 }
 
+.quadrants-s6-y,
 .scatter-s5-y {
     position: absolute;
     bottom: 10vh;
@@ -704,6 +709,7 @@ THAT ONE LEAF IN SCENE 5
     transform-origin: 0% 0%;
     transform: rotate(270deg);
 }
+.quadrants-s6-ylab,
 .scatter-s5-ylab {
     width: 100%;
     height: 100%;
@@ -776,6 +782,8 @@ PART 6 CONTENT
     background: wheat;
     filter: drop-shadow(10px 0px 6px rgba(0, 0, 0, 0.2));
     padding-bottom: 1vh;
+    transition: all 0.3s ease-in-out;
+
 }
 .quadrants-s6 {
     position: absolute;
@@ -785,6 +793,8 @@ PART 6 CONTENT
 
     bottom: 10vh;
     left: 10vw;
+
+
 }
 .main-text-scene-6 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -792,10 +802,11 @@ PART 6 CONTENT
     color: black;
     letter-spacing: 1px;
     padding: 5%;
-    transition: all 0.3s ease;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .fire-shape {
+    position: relative;
     float: left;
     padding: 2%;
     shape-outside: circle(50%);
@@ -813,7 +824,6 @@ PART 6 CONTENT
 }
 
 .fire-text {
-    backdrop-filter: invert(0%);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0);
     padding: 2%;
     width: fit-content;
@@ -821,7 +831,13 @@ PART 6 CONTENT
     font-size: 5vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
-    transition: all 0.5s ease-in-out;
+    
+    text-align: center;
+    opacity: 1;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    
+    
+    transition: all 0.4s ease-in-out;
 }
 
 
@@ -921,6 +937,26 @@ TEXT BUBBLES
 
 }
 
+.static-plot {
+    
+
+    float: right;
+    position: relative;
+    shape-outside: circle(0%);
+    padding: 2%;
+    width: 40vw;
+    height: 40vw;
+    filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.2));
+   
+    transition: all 0.4s ease-in-out;
+    
+}
+.static-plot > * {
+    position: absolute;
+}
+
+
+
 /* 
 ANIMATION KEYFRAME SECTION
 */
@@ -935,3 +971,4 @@ ANIMATION KEYFRAME SECTION
         opacity: 0;
     }
 }
+

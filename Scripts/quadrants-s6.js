@@ -24,7 +24,7 @@ for (let i = 0; i < data.length - 1; i++) {
         let point = document.createElement('div');
         point.className = 's-point';
         point.style.cssText = `
-            left: ${x}px;
+            left: ${x * 40}px;
             bottom: ${y}px;
             background: black;
         `;

@@ -15,6 +15,8 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.26.0/plotly.min.js"></script>
+
 
 
 <body>
@@ -75,8 +77,7 @@
             </div>
             <div id="part-3" class="step scene-container">
                 <div id="part-3-bar-axis">
-                   
-
+                    
                 </div>
                 <div id="part-3-env">
                     <div class="bar-plot">
@@ -160,8 +161,9 @@
                         carbon dioxide (Co2) emissions per capita of several countries. According to the data in the year 2013, 
                         
                     </p>
-                    <div>
-                        GRAPH HERE
+                    <div class="treemap-container" id="scene-4-treemap">
+                        <!-- treemap gona go here-->
+                         <script type="module" src="./Scripts/treemap-s4.js"></script>
                     </div>
                     <p>
                         More explanation about graph/agriculture, and data sources.
@@ -181,7 +183,7 @@
                 </div>
 
                 <p class="preset-font-twig text-bubble-thin" style="right: -60vw; margin-top: 30vh; font-size: 3vh;">
-                     What about other living inhabitants? How does the biodiversity get affected by deforestation? According to the Global Living Planet index, which measures 
+                     What about other living inhabitants aside from trees? How does the biodiversity get affected by deforestation? According to the Global Living Planet index, which measures 
                         the diversity and abundance of living beings in a given region, there have been significant changes in animal populations since its initial conception, strongly linked
                         with habitat loss related to deforestation. Between the year 1970 and 2020, the majority of continents has seen a decrease, with some anomalies such as 
                         the year 1990, which featured a major spike in (some region). 
@@ -231,6 +233,7 @@
 
 
                     <div class="scatter-points">
+                        <!-- If possible, just use the R version of the plot instead. its much easier-->
                         <script src="./Scripts/scatter-s5.js" class="scatter-point-adder"></script>
                     </div>
                 </div>
@@ -242,15 +245,42 @@
                 <div class="text-animate-fire">
                     <div class="fire-shape">
                         <img src="/Assets/Images/forest-fire.png"/>
-
-                        <div class="fire-text">
-                            <!--Placeholder text. Check JS-->
+                        
+                        <div class="wrap-visibility-fire-text">
+                            <div class="fire-text">
+                                <!--Placeholder text. Check JS-->
+                            </div>
                         </div>
+
                     </div>
+                    <div id="static-plot-container-s6">
+                        <img class="static-plot" id="scene6-static" src="./Assets/Images/burnedVsCo2.png"/>
+                    </div>
+                    
                     <p class="main-text-scene-6">
                         <!-- Placeholder-->
                     </p>
-                    <div class="quadrants-s6">
+                    
+                    <!-- TEMPORARILY HIDDEN, FINAL PRODUCT WILL SHOW (hopefully)-->
+                    <div class="quadrants-s6" style="display: none;">
+                        <div class="quadrants-s6">
+                            <div class="quadrants-s6-xlab">
+                                <script class="tick-maker">
+                                    var frag = document.createDocumentFragment();
+                                    let p = 6;
+                                    for (let i = 0; i < p; i++) {
+                                        let xtick = document.createElement('div');
+                                        xtick.innerHTML = `<p class="tick-label x">${1970 + i * 10}</p>`
+
+                                        while (xtick.childNodes[0]) {
+                                            frag.appendChild(xtick.childNodes[0]);
+                                        }
+                                    }
+
+                                    document.querySelector(".quadrants-s6-xlab").appendChild(frag);
+                                </script>
+                            </div>
+                        </div>
                         <script type="module" src="./Scripts/quadrants-s6.js"></script>
 
                     </div>
@@ -268,12 +298,12 @@
                     <div id="map"></div>
                 </div>
                 <p class="preset-font-twig text-bubble-thin" style="right: -60vw; margin-top: 30vh; font-size: 3vh;">
-                    Despite that however, many countries are making an effort to combat deforestation in an attempt to recover lost plant life. For example, in June 2019 to March 2020, the "Black Summer" bushfire swept the South-east coast of Australia through New South Wales to Queensland, destroying over 510,000 hectares of forest...
+                    Despite that however, many countries are making an effort to combat deforestation in an attempt to recover lost plant life. For example, in June 2019 to March 2020, the "Black Summer" bushfire swept the South-east coast of Australia through New South Wales to Queensland; areas of which contained a significant amount of forest area, amounting to over 510,000 hectares, but...
                 </p>
                 <p class="preset-font-twig text-bubble-thin" style="right: 10vw; margin-top: 120vh; position: absolute; font-size: 3vh;">
                     ...the following year, a multitude of organizations reached out to lend support for reforestation, with groups such as the landscape resilience 
                 </p>
-                <p class="preset-font-twig text-bubble-thin" style="right: 50vw; margin-top: 210vh; position: absolute; font-size: 3vh;">
+                <p class="preset-font-twig text-bubble-thin" style="right: 50vw; margin-top: 240vh; position: absolute; font-size: 3vh;">
                     As the world begins to bring attention to these issues, deforestation rates can be slowed significantly (conclusion)
                 </p>
             </div>

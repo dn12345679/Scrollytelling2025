@@ -1,5 +1,5 @@
-                            // didn't want to bother importing asynchronously so I hard-coded it. My bad future reader
-                            data = [
+// didn't want to bother importing asynchronously so I hard-coded it. My bad future reader
+data = [
   {
     "Entity": "Africa",
     "lpi_final": 100,
