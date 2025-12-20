@@ -366,7 +366,7 @@ function scene3(response) {
 function scene1(response) {
     const elements = [env, tree, ground, s1text, tree2, tree3];
     if (response.progress > 0.9) {
-        elements.forEach(el => {spike
+        elements.forEach(el => {
         if (!el.classList.contains('shift-right')) {
             el.classList.remove('shift-up');
             el.classList.add('shift-right');
