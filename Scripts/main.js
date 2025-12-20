@@ -34,6 +34,7 @@ const o2 = scrolly.querySelector('.animated-o2-particle');
 const intro_text = scrolly.querySelector('#intro-text-pin');
 /* PRELOAD ITEMS SCENE 2 */
 const text_box_s2 = scrolly.querySelectorAll('.main-text-scene-2.animate-text')
+
 /* PRELOAD ITEMS SCENE 3*/
 const env3 = scrolly.querySelector('#part-3-env');
 const logs = scrolly.querySelectorAll('.log');
@@ -41,6 +42,7 @@ const log_labels = scrolly.querySelectorAll('.bar-content')
 const axes3 = scrolly.querySelector('.bar-plot');
 /* PRELOAD ITEMS SCENE 4 */
 const text_box_s4 = scrolly.querySelectorAll('.main-text-scene-4.animate-text')
+const plot_treemap = scrolly.querySelector('#scene-4-treemap');
 /* Preload Items Scene 5*/
 const leaf = scrolly.querySelector('.leaf-s5');
 const scatter = scrolly.querySelector('.scatter-s5');
@@ -126,7 +128,7 @@ function scene6(response) {
         "",
         "Due to reasons such as food supply and land use, deforestation is often a result of a necessary and often undesired outcome in the development of countries. However, not all of forest land cover loss is within control of just anybody. Natural disasters, such as wildfires, accounted for the largest losses, approaching an estimated 13.875 million hectares, or approximately 46.96% of damage just in the year 2024, according to the Global Forest Watch.",
         "However, not all countries experienced an equal amount of losses with wildfires as the cause. In 2024, of the estimated tree cover loss (in hectares) globally, was over 151 million hectares. Canada, Russia, Brazil, Bolivia, and the United States accounted for a combined 91.75% of all wildfire loss in the world; over 138 million hectares of tree cover. ",
-        "This does seemingly have a deep impact on the overall carbon dioxide emissions by country! From the plot below, it can be seen that the countries with the highest amount of wildfires also appear to  <INSERT 4 QUADRANT SCATTER PLOT WILDFIRE HA VS CO2 HERE>"
+        "This does seemingly have a deep impact on the overall carbon dioxide emissions by country! From the plot adjacent, it can be seen that the countries with the highest area affected by wildfires tends to emit the most amount of carbon dioxide as well."
     ]
     
     let targetId;
@@ -213,7 +215,7 @@ function changeText(texts, index) {
 }
 
 function scene4(response) {
-    const elements = [...text_box_s4]
+    const elements = [...text_box_s4, plot_treemap]
     if (response.progress > 0.1) {
         elements.forEach(el => {
             el.classList.add("play-fade-in")
@@ -236,6 +238,19 @@ function scene7(response) {
     else if (response.progress > 0.5) {
         resetMarkingsAll();
         map.setView([-25.2744, 133.7751], 5);
+
+        let coords = [
+            [-34.55, 138.35],
+            [-35.3, 149.1],
+            [-33.87, 151.20]
+        ]
+        for (let i = 0; i < coords.length; i++) {
+            L.circle([coords[i][0], coords[i][1]], 300000, {
+            color: 'green',
+            fillColor: 'rgba(133, 185, 136, 1)',
+            fillOpacity: 0.1
+        }).addTo(markerGroupCurrent)
+        }
         
 
     }else if (response.progress > 0.05) {
@@ -253,7 +268,7 @@ function scene7(response) {
             color: 'red',
             fillColor: '#f03',
             fillOpacity: 0.1
-        }).addTo(markerGroupCurrent).bindPopup("Hello")
+        }).addTo(markerGroupCurrent).bindPopup("Brisbane")
     } else{
         resetMarkingsAll();
     }
@@ -284,7 +299,7 @@ function scene5(response) {
         // IDEA: Maybe include layer-blurred "trees" that acts as parallax effects
     }
     else if (response.progress > 0.6) {
-        
+
     }
     
 
@@ -351,7 +366,7 @@ function scene3(response) {
 function scene1(response) {
     const elements = [env, tree, ground, s1text, tree2, tree3];
     if (response.progress > 0.9) {
-        elements.forEach(el => {
+        elements.forEach(el => {spike
         if (!el.classList.contains('shift-right')) {
             el.classList.remove('shift-up');
             el.classList.add('shift-right');

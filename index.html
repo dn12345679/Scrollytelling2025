@@ -35,7 +35,7 @@
 
                 <!-- Will appear as an intro -->
                 <p class="preset-font-bark" id="intro-text-pin">
-                    Trees! 
+                    About Trees, by Dylan N.
                 </p>
                 <section id="scene-1-text">
 
@@ -45,7 +45,8 @@
                     </p>
                     <p class="preset-font-wood"> 
                         Today there are over 60,000 estimated species of trees that exist in the world! 
-                        Animals are often the primary inhabitant of trees, such as Woodpeckers or Owls!
+                        Animals are often the primary inhabitant of trees, and similarly, humans make use of trees in 
+                        their own way, such as for food production, agriculture, or logging.
                     </p>
 
                     <p class="preset-font-wood">
@@ -158,15 +159,19 @@
                     <p class="preset-font-wood main-text-scene-4 animate-text">
                         Increased carbon dioxide emissions has been a primary point of concern when it comes to deforestation.  
                         One of the previously mentioned factors which contributed significantly to deforestation was farming and agriculture. Pendra et al. (2019), measured the 
-                        carbon dioxide (Co2) emissions per capita of several countries. According to the data in the year 2013, 
+                        carbon dioxide (Co2) emissions per capita of several countries. According to the data in the year 2013, countries that led in 
+                        emissions from agriculture and pastures which required deforestation was Luxembourg and Brazil, totaling over 12% of the share of total emissions each, 
+                        or over 2.7 per capita embodied emissions. 
                         
                     </p>
                     <div class="treemap-container" id="scene-4-treemap">
                         <!-- treemap gona go here-->
                          <script type="module" src="./Scripts/treemap-s4.js"></script>
                     </div>
-                    <p>
-                        More explanation about graph/agriculture, and data sources.
+                    <p class="preset-font-wood main-text-scene-4 animate-text">
+                        What exactly is "per capita embodied emissions"? To understand the context of the plot, it is important to understand this 
+                        represents the total amount in tons, per person in the country, that was generated from importing food or other natural resources.
+                        This production of material is a prime driver of deforestation, with key products including beef, soybean, and palm oil. 
                     </p>
 
                 </section>
@@ -186,55 +191,59 @@
                      What about other living inhabitants aside from trees? How does the biodiversity get affected by deforestation? According to the Global Living Planet index, which measures 
                         the diversity and abundance of living beings in a given region, there have been significant changes in animal populations since its initial conception, strongly linked
                         with habitat loss related to deforestation. Between the year 1970 and 2020, the majority of continents has seen a decrease, with some anomalies such as 
-                        the year 1990, which featured a major spike in (some region). 
+                        the year 1990, which featured a major spike in Europe and Central Asia... 
                 </p>
                 <p class="preset-font-twig text-bubble-thin" style="right: 2vw; margin-top: 150vh; position: absolute; font-size: 3vh;">
-                    However overall, there was a noticeable decrease in recorded LPI across all the (named regions).
+                    However overall, there was a noticeable decrease in recorded LPI across all the regions. This could likely indicate some correlation between loss of forest area and habitability of an ecosystem.
                 </p>
 
                 <!-- EITHER PUT THE Co2 part here, or in part 6-->
-                <div class="scatter-s5">
-                    <div class="scatter-s5-y">
-                        <div class="scatter-s5-ylab">
-                            <script class="tick-maker">
-                                var frag = document.createDocumentFragment();
-                                let m = 13;
-                                for (let i = 0; i < m; i++) {
-                                    let xtick = document.createElement('div');
-                                    xtick.innerHTML = `<p class="tick-label-small y">${(i+1) * 10}</p>`
+                <div class="scatter-s5" id="scatter-s5">
 
-                                    while (xtick.childNodes[0]) {
-                                        frag.appendChild(xtick.childNodes[0]);
+                    <!--Note to self, remove this if no longer using plotly (its cool)-->
+                    <div style="visibility: hidden;">
+                        <div class="scatter-s5-y">
+                            <div class="scatter-s5-ylab">
+                                <script class="tick-maker">
+                                    var frag = document.createDocumentFragment();
+                                    let m = 13;
+                                    for (let i = 0; i < m; i++) {
+                                        let xtick = document.createElement('div');
+                                        xtick.innerHTML = `<p class="tick-label-small y">${(i+1) * 10}</p>`
+
+                                        while (xtick.childNodes[0]) {
+                                            frag.appendChild(xtick.childNodes[0]);
+                                        }
                                     }
-                                }
 
-                                document.querySelector(".scatter-s5-ylab").appendChild(frag);
-                            </script>
+                                    document.querySelector(".scatter-s5-ylab").appendChild(frag);
+                                </script>
+                            </div>
+                        </div>
+                        <div class="scatter-s5-x">
+                            <div class="scatter-s5-xlab">
+                                <script class="tick-maker">
+                                    var frag = document.createDocumentFragment();
+                                    let n = 6;
+                                    for (let i = 0; i < n; i++) {
+                                        let xtick = document.createElement('div');
+                                        xtick.innerHTML = `<p class="tick-label x">${1970 + i * 10}</p>`
+
+                                        while (xtick.childNodes[0]) {
+                                            frag.appendChild(xtick.childNodes[0]);
+                                        }
+                                    }
+
+                                    document.querySelector(".scatter-s5-xlab").appendChild(frag);
+                                </script>
+                            </div>
                         </div>
                     </div>
-                    <div class="scatter-s5-x">
-                        <div class="scatter-s5-xlab">
-                            <script class="tick-maker">
-                                var frag = document.createDocumentFragment();
-                                let n = 6;
-                                for (let i = 0; i < n; i++) {
-                                    let xtick = document.createElement('div');
-                                    xtick.innerHTML = `<p class="tick-label x">${1970 + i * 10}</p>`
-
-                                    while (xtick.childNodes[0]) {
-                                        frag.appendChild(xtick.childNodes[0]);
-                                    }
-                                }
-
-                                document.querySelector(".scatter-s5-xlab").appendChild(frag);
-                            </script>
-                        </div>
-                    </div>
 
 
-                    <div class="scatter-points">
+                    <div class="scatter-points" id="scatter-points">
                         <!-- If possible, just use the R version of the plot instead. its much easier-->
-                        <script src="./Scripts/scatter-s5.js" class="scatter-point-adder"></script>
+                        <script type="module" src="./Scripts/scatter-s5.js" class="scatter-point-adder"></script>
                     </div>
                 </div>
                                 
@@ -301,10 +310,10 @@
                     Despite that however, many countries are making an effort to combat deforestation in an attempt to recover lost plant life. For example, in June 2019 to March 2020, the "Black Summer" bushfire swept the South-east coast of Australia through New South Wales to Queensland; areas of which contained a significant amount of forest area, amounting to over 510,000 hectares, but...
                 </p>
                 <p class="preset-font-twig text-bubble-thin" style="right: 10vw; margin-top: 120vh; position: absolute; font-size: 3vh;">
-                    ...the following year, a multitude of organizations reached out to lend support for reforestation, with groups such as the landscape resilience 
+                    ...the following year, a multitude of organizations reached out to lend support for reforestation, with groups such as the Parks and Wildlife Services, university researchers, and other non profit organizations all contributing to the analysis for treatment of several affected areas.
                 </p>
                 <p class="preset-font-twig text-bubble-thin" style="right: 50vw; margin-top: 240vh; position: absolute; font-size: 3vh;">
-                    As the world begins to bring attention to these issues, deforestation rates can be slowed significantly (conclusion)
+                    All over the world, forest restoration efforts are being made in order to counteract the constant pressure that forests currently face as a result of a multitude of causes. The aim of this scrollytelling project is to bring light onto the topic and inspire further advocation for reforestation; an often overlooked problem.
                 </p>
             </div>
 
