@@ -238,6 +238,19 @@ function scene7(response) {
         resetMarkingsAll();
         map.setView([0, 0], 3)
 
+        let coords = [
+            [-10.235, -54.209],
+            [-0.0236, 33.9],
+            [24.4, 85.25],
+            [35.4881, 114.404]
+        ]
+        for (let i = 0; i < coords.length; i++) {
+            L.circle([coords[i][0], coords[i][1]], 1100000, {
+            color: 'green',
+            fillColor: 'rgba(133, 185, 136, 1)',
+            fillOpacity: 0.1
+        }).addTo(markerGroupCurrent)
+        }
     }
     else if (response.progress > 0.5) {
         resetMarkingsAll();
@@ -246,7 +259,8 @@ function scene7(response) {
         let coords = [
             [-34.55, 138.35],
             [-35.3, 149.1],
-            [-33.87, 151.20]
+            [-33.87, 151.20],
+            [-28, 152]
         ]
         for (let i = 0; i < coords.length; i++) {
             L.circle([coords[i][0], coords[i][1]], 300000, {
