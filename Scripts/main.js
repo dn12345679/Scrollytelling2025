@@ -127,8 +127,8 @@ function scene6(response) {
     const text = [
         "",
         "Due to reasons such as food supply and land use, deforestation is often a result of a necessary and often undesired outcome in the development of countries. However, not all of forest land cover loss is within control of just anybody. Natural disasters, such as wildfires, accounted for the largest losses, approaching an estimated 13.875 million hectares, or approximately 46.96% of damage just in the year 2024, according to the Global Forest Watch.",
-        "However, not all countries experienced an equal amount of losses with wildfires as the cause. In 2024, of the estimated tree cover loss (in hectares) globally, was over 151 million hectares. Canada, Russia, Brazil, Bolivia, and the United States accounted for a combined 91.75% of all wildfire loss in the world; over 138 million hectares of tree cover. ",
-        "This does seemingly have a deep impact on the overall carbon dioxide emissions by country! From the plot adjacent, it can be seen that the countries with the highest area affected by wildfires tends to emit the most amount of carbon dioxide as well."
+        "However, not all countries experienced an equal amount of losses with wildfires as the cause. In 2024, of the estimated tree cover loss (in hectares) globally, was over 151 million hectares. Canada, Russia, Brazil, Bolivia, and the United States accounted for a combined 91.75% of all wildfire loss in the world; over 138 million hectares of tree cover. This does seemingly have a deep impact on the overall carbon dioxide emissions by country as well.",
+        "From the plot adjacent, it can be seen that the countries with the highest area affected by wildfires tends to emit the most amount of carbon dioxide as well. Brazil appears to have emit the highest amount of carbon dioxide, while similarly having the higher percentage of burned area."
     ]
     
     let targetId;
@@ -153,25 +153,29 @@ function scene6(response) {
             setFireText("");
             fire.style.scale = '0.0';
             fire.style.shapeOutside = 'circle(0%)';
+            static_plot_s6.style.visibility = 'visible'
             static_plot_s6.style.shapeOutside = 'circle(50%)';
-            static_plot_s6.style.visibility = 'visible';
+            static_plot_s6.style.opacity = '1.0';
             transitionToBottom();
         } else if (targetId === 2) {
             fire.style.scale = '1.0';
             fire.style.shapeOutside = 'circle(50%)';
+            static_plot_s6.style.visibility = 'hidden'
             static_plot_s6.style.shapeOutside = 'circle(0%)';
-            static_plot_s6.style.visibility = 'hidden';
+            static_plot_s6.style.opacity = '0.0';
             setFireText("138m hA");
         } else if (targetId === 1) {
             fire.style.scale = '1.0';
             fire.style.shapeOutside = 'circle(50%)';
+            static_plot_s6.style.visibility = 'hidden'
             static_plot_s6.style.shapeOutside = 'circle(0%)';
-            static_plot_s6.style.visibility = 'hidden';
+            static_plot_s6.style.opacity = '0.0';
             setFireText("46.96%");
         } else {
             fire.style.scale = '1.0';
             fire.style.shapeOutside = 'circle(50%)';
-            static_plot_s6.style.visibility = 'hidden';
+            static_plot_s6.style.visibility = 'hidden'
+            static_plot_s6.style.opacity = '0.0';
             static_plot_s6.style.shapeOutside = 'circle(0%)';
             setFireText('');
         }

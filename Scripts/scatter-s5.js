@@ -18,36 +18,60 @@ function scatterLPI() {
     let years = Array.from({length: 6}, (e, i)=> 1970 + i * 10)
     
     const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8', '#46ca51ff', '#d6bc25ff'];
-
-    var trace1 = { x: years, y: lpi_final.slice(0, 6),   name: countries[0]   };  // Africa
-    var trace2 = { x: years, y: lpi_final.slice(6, 12),  name: countries[6]   };  // Asia
-    var trace3 = { x: years, y: lpi_final.slice(12, 18), name: countries[12]  };  // Europe
-    var trace4 = { x: years, y: lpi_final.slice(18, 24), name: countries[18]  };  // Freshwater
-    var trace5 = { x: years, y: lpi_final.slice(24, 30), name: countries[24]  };  // Latin America
-    var trace6 = { x: years, y: lpi_final.slice(30, 36), name: countries[30]  };  // North America
-    var trace7 = { x: years, y: lpi_final.slice(36, 42), name: countries[36]  };  // World
-
-    
-
-    var traces = [trace1, trace2, trace3, trace4, trace5, trace6, trace7]
+    // auto create 7 traces with similar properties
+    let regions = 7 ;
+    let entriesPerRegion = 6;
+    var traces = Array.from({length: regions}, (_, index) => ({
+        x: years, 
+        y: lpi_final.slice(index * entriesPerRegion, (index +1) * entriesPerRegion),
+        name: countries[entriesPerRegion*index]
+      }));
+  
     var layout = {
       plot_bgcolor: 'rgba(0,0,0,0)',
       paper_bgcolor: 'rgba(0,0,0,0)',
+      autosize: true, 
+      title: {
+        text: "Living Planet Index by Region, 1970 - 2020",
+        font: {size: 30}
+      },
       xaxis: {
         title: {
           text: "Year",
-          font: {size: 16, color: "#000000ff"}
-        }
+          font: {size: 26, color: "#000000ff"}
+        },
+        tickfont: {
+          size: 14
+        },
+
       },
       yaxis: {
         title: {
           text: "Living Planet Index (LPI)",
-          font: {size: 16, color: "#000000ff"}
-        }
+          font: {size: 26, color: "#000000ff"}
+        },
+        tickfont: {
+          size: 14
+        },
+      },
+      legend: {
+        font: {size: 16},
+        title: {
+          text: "Regions",
+          font: {size: 25}
+        },
+        
       }
+
     }
 
-    Plotly.newPlot('scatter-s5', traces, layout, {responsive: true});
+    var config = {
+      responsive: true , 
+      displayModeBar: false,
+      scrollZoom: false, 
+    }
+
+    Plotly.newPlot('scatter-s5', traces, layout, config);
 }
 
 scatterLPI();

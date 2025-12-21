@@ -39,9 +39,15 @@ function emissionTreeMap() {
     };
     const layout = {
         margin: {l: 0, r: 0, t: 0, b: 0},
-        paper_bgcolor: 'white'
+        paper_bgcolor: 'white',
+        autosize: true,
     };
-    Plotly.newPlot('scene-4-treemap', [trace], layout, {responsive: true})
+    var config = {
+      responsive: true , 
+      displayModeBar: false,
+      scrollZoom: false, 
+    }
+    Plotly.newPlot('scene-4-treemap', [trace], layout, config)
 }
 
 emissionTreeMap()

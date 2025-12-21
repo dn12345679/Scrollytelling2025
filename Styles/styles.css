@@ -728,8 +728,12 @@ THAT ONE LEAF IN SCENE 5
 
 .scatter-points {
     position: absolute;
+    
+    /* bug rn
+    
     height: 40vw;
     width: 60vw;
+    */
 
     bottom: 10vh;
     left: 10vw;
@@ -802,6 +806,7 @@ PART 6 CONTENT
     left: 10vw;
 
 
+
 }
 .main-text-scene-6 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -810,6 +815,13 @@ PART 6 CONTENT
     letter-spacing: 1px;
     padding: 5%;
     transition: opacity 0.3s ease-in-out;
+}
+
+#scene6-static {
+    opacity: 0;
+    width: 50vw;
+    height: 50vw;
+    transition: all 0.5s ease-in-out;
 }
 
 .fire-shape {
