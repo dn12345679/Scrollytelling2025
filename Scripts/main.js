@@ -127,7 +127,7 @@ function scene6(response) {
     const text = [
         "",
         "Due to reasons such as food supply and land use, deforestation is often a result of a necessary and often undesired outcome in the development of countries. However, not all of forest land cover loss is within control of just anybody. Natural disasters, such as wildfires, accounted for the largest losses, approaching an estimated 13.875 million hectares, or approximately 46.96% of damage just in the year 2024, according to the Global Forest Watch.",
-        "However, not all countries experienced an equal amount of losses with wildfires as the cause. In 2024, of the estimated tree cover loss (in hectares) globally, was over 151 million hectares. Canada, Russia, Brazil, Bolivia, and the United States accounted for a combined 91.75% of all wildfire loss in the world; over 138 million hectares of tree cover. This does seemingly have a deep impact on the overall carbon dioxide emissions by country as well.",
+        "However, not all countries experienced an equal amount of losses with wildfires as the cause. In 2024, of the estimated tree cover loss (in hectares) globally, was over 13.8 million hectares. Canada, Russia, Brazil, Bolivia, and the United States accounted for a combined 91.75% of all wildfire loss in the world; over 12.3 million hectares of tree cover. This does seemingly have a deep impact on the overall carbon dioxide emissions by country as well.",
         "From the plot adjacent, it can be seen that the countries with the highest area affected by wildfires tends to emit the most amount of carbon dioxide as well. Brazil appears to have emit the highest amount of carbon dioxide, while similarly having the higher percentage of burned area."
     ]
     

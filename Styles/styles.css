@@ -38,7 +38,7 @@ html {
 }
 
 /*
-GLOBAL STATES
+GLOBAL STATESbox-shadow: -10px 0px 10px 1px #aaaaaa93; 
 */
 
 #intro-text-pin {
@@ -879,7 +879,7 @@ PART 7 CONTENT
     top: 0;
 }
 #map { 
-    
+    box-shadow: -10px 0px 10px 1px #aaaaaa93; 
     height: 100vh; 
     width: 100vw ;
     
@@ -989,11 +989,22 @@ SOURCES
     padding-top: 2%;
 }
 .source-text {
-    padding: 5%;
+    padding-left: 5%;
     font-size: 3vh;
 }
+.sources table {
+    border-collapse: separate;
+    border-spacing: 0 3vh; /* Adjust the 3vh value to your preference */
+    width: 100%;
+}
+
 .source-link {
     font-size: 2vh;
+    padding-left: 1%;
+    list-style: none;
+}
+.sub-cite {
+    font-size: 1.2vh;
     padding-left: 1%;
 }
 
